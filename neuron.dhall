@@ -12,4 +12,5 @@
     True
 , minVersion =
     "0.5"
+, formats = ["markdown", "org"]
 }

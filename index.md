@@ -6,7 +6,7 @@ title: Alexander Soto
 
 My name is Alexander Soto. I'm an activist, educator, technologist and agent of social change. My interests are in exploring issues in community-building, social justice, education and leveraging technology to address social problems.
 
-In the past I've worked as a labor rights organizer, an AmeriCorps member with United Way, a technology teacher at the Margarita Muñiz Academy and I'm currently an Expert In Residence at Resilient Coders.
+In the past I've worked as a labor rights organizer, an AmeriCorps member with United Way, a technology teacher at the Margarita Muñiz Academy and I'm currently an Expert In Residence at [Resilient Coders.](http://www.resilientcoders.org/)
 
 This site is a collection of my thoughts on the intersection of technology and social justice while also documenting what I'm currently learning.
 
@@ -15,5 +15,4 @@ This site is a collection of my thoughts on the intersection of technology and s
 
 For a complete timeline, see 
 <97a70c10>
-
 
