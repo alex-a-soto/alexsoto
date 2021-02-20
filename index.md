@@ -1,18 +1,17 @@
 ---
-title: Alexander Soto
+title: About these notes
 ---
 
 ![](https://avatars3.githubusercontent.com/u/60619625?s=400&u=2b2ae2ea1f02f658829d8529f412b9093ce4ae51&v=4){#avatar .ui .right .floated .small .image}
 
-My name is Alexander Soto. I'm an activist, educator, technologist and agent of social change. My interests are in exploring issues in community-building, social justice, education and leveraging technology to address social problems.
+Hi, I'm Alexander Soto.
 
-In the past I've worked as a labor rights organizer, an AmeriCorps member with United Way, a technology teacher at the Margarita Muñiz Academy and I'm currently an Expert In Residence at [Resilient Coders.](http://www.resilientcoders.org/)
+I'm a community organizer, educator, software engineer, hacktivist and agent of social change. My interests are in exploring issues in community-building, social justice, education and leveraging technology to address social problems.
 
-This site is a collection of my thoughts on the intersection of technology and social justice while also documenting what I'm currently learning.
+In the past I've worked as a labor rights organizer, a teacher at the Margarita Muñiz Academy and I'm currently an Expert In Residence at [Resilient Coders.](http://www.resilientcoders.org/)
 
+This site is the scattered and unfinished version of my thoughts while documenting what I'm currently learning and exploring.
 
-<z:zettels?tag=timeline/**&timeline&cf>
+If a note resonates with you, or if you strongly disagree, please let me know. Send me a [direct message](https://twitter.com/messages/compose?recipient_id=4648173315) on [Twitter](https://twitter.com/alexsoto_dev) and we can talk.
 
-For a complete timeline, see 
-<97a70c10>
-
+[[z:zettels?tag=blog&blog&cf]]
