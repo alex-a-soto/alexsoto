@@ -2,7 +2,7 @@
 title: About these notes
 ---
 
-![](https://avatars3.githubusercontent.com/u/60619625?s=400&u=2b2ae2ea1f02f658829d8529f412b9093ce4ae51&v=4){#avatar .ui .right .floated .small .image}
+![](https://avatars3.githubusercontent.com/u/60619625?s=400&u=2b2ae2ea1f02f658829d8529f412b9093ce4ae51&v=4){#avatar .ui .left .floated .small .image}
 
 Hi, I'm Alexander Soto.
 
