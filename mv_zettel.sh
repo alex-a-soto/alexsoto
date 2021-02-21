@@ -25,5 +25,5 @@ fi
 mv "$ZETTEL.md" "$NEW_NAME.md"
 sed -i "s/\[\[$ZETTEL\]\]/[[$NEW_NAME]]/g" ./*.md
 
-git add .
-git commit -m "Renamed $ZETTEL -> $NEW_NAME"
+#git add .
+#git commit -m "Renamed $ZETTEL -> $NEW_NAME"
