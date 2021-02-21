@@ -3,7 +3,7 @@ date: 2021-02-17T22:13
 tags:
   - blog
 ---
-# Building an E Ink Laptop
+# Building an E-Ink Laptop
 
 A series where I'm documenting my process of designing and building an eink laptop.
 
@@ -14,28 +14,28 @@ A series where I'm documenting my process of designing and building an eink lapt
 ## Background
 Since the E Ink Corporation's founding in 1997 and the patenting of its microencapsulated electrophoretic display, or epaper, manufacturers started to incorporate e-ink film into consumer devices. [^eink-founding]. Some of the first devices were ereaders: The Sony Librie in 2004[^sony] and the Amazon Kindle in 2007 [^kindle].
 
-Throughout the years, we've seen several eink products and prototypes: eink-film used with larger screens[^dasung25], color[^kaleido], flexible material[^flexible] and most recently have started seeing eink displays used in smartphones and tablets, notably from Hisense and Onyx Boox product lines. And while eink has been around for 24 years, we have yet to see a laptop with an eink panel.
+Throughout the years, we've seen several eink products and prototypes: e-ink film used with larger screens[^dasung25], color[^kaleido], flexible material[^flexible] and most recently have started seeing e-ink displays used in smartphones and tablets, notably from Hisense and Onyx Boox product lines. And while e-ink has been around for 24 years, we have yet to see a laptop with an e-ink panel.
 
 
 ## Why isn't there an E Ink Laptop?
-There have been attempts in the past to create a similar device: Pixel Qi and OLPC[^pixelqi], Boox Typewriter[^boox typewriter], Yoga Book C930[^C930] and ThinkBook Plus[^thinkbook-plus]. These attempts did not materialize, were discontinued, or were not sufficiently suitable to meet users' demands due to hardware or lack of a cohesive UX/UI paradigm. To make matters worse, the E Ink Corporation holds the patents for its eink technology and only licenses its technology to large manufacturers making availability or mass adoption difficult.[^patent]
+There have been attempts in the past to create a similar device: Pixel Qi and OLPC[^pixelqi], Boox Typewriter[^boox typewriter], Yoga Book C930[^C930] and ThinkBook Plus[^thinkbook-plus]. These attempts did not materialize, were discontinued, or were not sufficiently suitable to meet users' demands due to hardware or lack of a cohesive UX/UI paradigm. To make matters worse, the E Ink Corporation holds the patents for its e-ink technology and only licenses its technology to large manufacturers making availability or mass adoption difficult.[^patent]
 
-Fortunately, some of the most exciting work and innovation happening today is in the eink modding community[^eink-mechanical]. There have been attempts to re-purposing ereaders: as a calendar,[^cal] to display a static image or site[^nyt], Kobo devices running GNU/Linux[^kobo], Amazon Kindle devices repurposed as a development platform[^kindledev], the Remarkable 1 running Parabola[^rm1], and PINE 64 recently announcing a native e-ink single-board computer[^pine64].
+Fortunately, some of the most exciting work and innovation happening today is in the e-ink modding community[^eink-mechanical]. There have been attempts to re-purposing ereaders: as a calendar,[^cal] to display a static image or site[^nyt], Kobo devices running GNU/Linux[^kobo], Amazon Kindle devices repurposed as a development platform[^kindledev], the Remarkable 1 running Parabola[^rm1], and PINE 64 recently announcing a native e-ink single-board computer[^pine64].
 
-After following the development of eink for some time, I've decided to re-use some of the existing hardware I have and create an eink laptop.
+After following the development of e-ink for some time, I've decided to re-use some of the existing hardware I have and create an e-ink laptop.
 
 
 
 ## Why do you want to build an E Ink laptop?
 From about 6 am to 7 pm, I'm in front of a computer or digital device that's emitting blue light. Throughout the day, I'm supporting students, attending meetings, reading documentation, news articles, programming, learning, using emacs and org-mode to capture information, write down thoughts, create tasks, and conversing with my knowledge management system.
 
-I try to use my eink monitor as much as possible throughout the day to reduce eye strain, fatigue and lessen distractions while intermittently taking breaks. The Dasung monitors go a long way to make this possible when I'm home or in a stationary place. Though there are times, I'm not working in front of my desktop or would like to work at a different location. The teardown and set-up of my environment when using an eink monitor is somewhat tedious:
+I try to use my e-ink monitor as much as possible throughout the day to reduce eye strain, fatigue and lessen distractions while intermittently taking breaks. The Dasung monitors go a long way to make this possible when I'm home or in a stationary place. Though there are times, I'm not working in front of my desktop or would like to work at a different location. The teardown and set-up of my environment when using an e-ink monitor is somewhat tedious:
 
 - making adjustments and tweaks to the window manager.
 - adjusting font sizes.
 - changing themes in different applications.
 
-I am then having to switch the changes back for using a regular LCD for meetings or videos. I've already solved some of this by writing some scripts and making adjustments in some applications. Still, I would like to design the ground-up experience for using a device with a dedicated eink monitor and reduce friction.
+I am then having to switch the changes back for using a regular LCD for meetings or videos. I've already solved some of this by writing some scripts and making adjustments in some applications. Still, I would like to design the ground-up experience for using a device with a dedicated e-ink monitor and reduce friction.
 
 
 
@@ -47,7 +47,7 @@ I'll be using a 'headless' Thinkpad T480 [^pi] combined with the Dasung HD-FT [^
 
 ## Thinkpad T480
 
-The Thinkpad T480 seems to be an ideal laptop for building an eink laptop, The T480 has [^t480]:
+The Thinkpad T480 seems to be an ideal laptop for building an e-ink laptop, The T480 has [^t480]:
 - A hot-swappable battery (internal and external).
 - 13 hours of battery while web browsing with the 72Wh battery.
 - Supports up to 64 GB of ram.
@@ -61,14 +61,14 @@ The Thinkpad T480 seems to be an ideal laptop for building an eink laptop, The T
 ![](static/t480-mobo.jpg){.ui .centered .floated .medium .image}
 ![](static/t480-no-lcd.jpg){.ui .left .medium .image}
 
-The hot-swappable battery and long battery life are essential for any portable setup, especially with an eink monitor. The T480 supports up to 64Gb of ram and two Nvme drives, providing plenty of power and expansion as a daily driver.
+The hot-swappable battery and long battery life are essential for any portable setup, especially with an e-ink monitor. The T480 supports up to 64Gb of ram and two Nvme drives, providing plenty of power and expansion as a daily driver.
 
 Since the Dasung monitors connect via HDMI and receive power through USB, the T480 has all of the necessary ports without an adapter. Lastly, after removing the lid cover with the T480, there is room here to hack and mod the Dasung screen to the T480.
 
 ## Dasung HD-FT
 ![](static/dasung-monitor.jpg){.ui .centered .medium .image}
 
-Dasung currently is the only manufacturer of eink monitors that I'm aware of [^gpl], and their third-generation monitors are a substantial upgrade from prior generations.
+Dasung currently is the only manufacturer of e-ink monitors that I'm aware of [^gpl], and their third-generation monitors are a substantial upgrade from prior generations.
 
 
 Directly from the monitor, you can:
@@ -77,14 +77,14 @@ Directly from the monitor, you can:
 - Clear the screen
 - Turn on and off the backlight
 
-The ability to easily change the monitor's modes without software, the fast screen refresh, and the backlight make it a great base to build an eink laptop.
+The ability to easily change the monitor's modes without software, the fast screen refresh, and the backlight make it a great base to build an e-ink laptop.
 
 ## Next Steps
-The first post went over my reasons for building an eink laptop, some history about eink technology, the eink modding community, recent advancements, and the hardware I've selected to create an eink laptop.
+The first post went over my reasons for building an e-ink laptop, some history about e-ink technology, the e-ink modding community, recent advancements, and the hardware I've selected to create an e-ink laptop.
 
 The next post in the series will be a teardown of the Dasung HD-FT, inspired by Kev Zettler's work on the Dasung Paperlike Pro.[^zettler]
 
-If this post resonated positively or negatively, send me a [direct message](https://twitter.com/messages/compose?recipient_id=4648173315) on [Twitter](https://twitter.com/alexsoto_dev), and we can talk. Also, ping if you’d like to know the updates on this post or if you have suggestions, comments, questions, or would like to collaborate.
+If this post resonated positively or negatively, send me a [direct message](https://twitter.com/messages/compose?recipient_id=4648173315) on [Twitter](https://twitter.com/alexsotodev), and we can talk. Also, ping if you’d like to know the updates on this post or if you have suggestions, comments, questions, or would like to collaborate.
 
 [^eink-founding]: [E Ink - Wikipedia](https://en.wikipedia.org/wiki/E_Ink)
 

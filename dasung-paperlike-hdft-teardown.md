@@ -85,6 +85,6 @@ According to the panel that was disassembled, this appears to be the e-ink panel
 
 ### The Control Boards
 
-[^dm]: If you think this post resonated, be it positive or negative, Send me a [direct message](https://twitter.com/messages/compose?recipient_id=4648173315) on [Twitter](https://twitter.com/alexsoto_dev) and we can talk. Also ping if you'd like to know the updates on this post.
+[^dm]: If you think this post resonated, be it positive or negative, Send me a [direct message](https://twitter.com/messages/compose?recipient_id=4648173315) on [Twitter](https://twitter.com/alexsotodev) and we can talk. Also ping if you'd like to know the updates on this post.
 
 [^ES133TT3]: [Panelook E Ink ES133TT3](https://www.panelook.com/ES133TT3_E%20Ink_13.3_EPD_overview_31869.html)
