@@ -1,4 +1,4 @@
-{ siteTitle = "@alexsotodev Notes"
+{ siteTitle = "alexsoto.dev"
 , author = Some "Alexander Soto"
 , siteBaseUrl = Some "https://alexsoto.dev"
 , theme = "blue"
