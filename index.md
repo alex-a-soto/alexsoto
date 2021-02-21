@@ -8,7 +8,7 @@ Hi, I'm Alexander Soto.
 
 I'm a community organizer, educator, software engineer, hacktivist and agent of social change. My interests are in exploring issues in community-building, social justice, education and leveraging technology to address social problems.
 
-In the past I've worked as a labor rights organizer, a teacher at the Margarita Muñiz Academy and I'm currently an Expert In Residence at [Resilient Coders.](http://www.resilientcoders.org/)
+In the past I've worked as a labor rights organizer, a teacher at the Margarita Muñiz Academy and I'm currently an Expert In Residence at [Resilient Coders.](https://www.resilientcoders.org/)
 
 This site is the [scattered and unfinished version of my thoughts](https://alexsoto.dev/impulse.html) while documenting what I'm currently learning and exploring.
 
