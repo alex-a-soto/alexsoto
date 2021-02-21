@@ -47,41 +47,46 @@ I'll be using a 'headless' Thinkpad T480 [^pi] combined with the Dasung HD-FT [^
 
 ## Thinkpad T480
 
-The Thinkpad T480, seems to be an ideal laptop for building an eink laptop, The T480 has[^t480]:
-
+The Thinkpad T480 seems to be an ideal laptop for building an eink laptop, The T480 has [^t480]:
 - A hot-swappable battery (internal and external).
 - 13 hours of battery while web browsing with the 72Wh battery.
 - Supports up to 64 GB of ram.
 - Two Nvme drives (type 2280 and 2242).
-- Standard HDMI port, USB-C, Thunderbolt 3, Headphone jack, Ethernet and SD cart slot.
+- Standard HDMI port, USB-C, Thunderbolt 3, Headphone Jack, Ethernet, and SD card slot.
 - Uses a standard USB-C charger. [^thinkplus]
 - Lightweight and portable.
+- It can be modded to use the classic 7-row keyboard. [^xytech]
 
-- Can be modded to use the classic 7-row keyboard. [^xytech]
 
 ![](static/t480-mobo.jpg){.ui .centered .floated .medium .image}
 ![](static/t480-no-lcd.jpg){.ui .left .medium .image}
 
-## Dasung HD-FT
-Dasung currently is the only manafacturer of eink monitors that I'm aware of [^gpl], and their third generation monitors are a substantial upgrade from prior generations.
+The hot-swappable battery and long battery life are essential for any portable setup, especially with an eink monitor. The T480 supports up to 64Gb of ram and two Nvme drives, providing plenty of power and expansion as a daily driver.
 
-Directly from the monitor you can:
+Since the Dasung monitors connect via HDMI and receive power through USB, the T480 has all of the necessary ports without an adapter. Lastly, after removing the lid cover with the T480, there is room here to hack and mod the Dasung screen to the T480.
+
+## Dasung HD-FT
+![](static/dasung-monitor.jpg){.ui .centered .medium .image}
+
+Dasung currently is the only manufacturer of eink monitors that I'm aware of [^gpl], and their third-generation monitors are a substantial upgrade from prior generations.
+
+
+Directly from the monitor, you can:
 - Change image modes (M1, M2, M3, Fast, Fast+, Fast++, Black, Black+, Black++)
 - Adjust contrast
 - Clear the screen
 - Turn on and off the backlight
 
-All without the need of running any additional software. Lastly, the Dasung HD-FT is also faster than prior generations in terms of turning on and off the device.
+The ability to easily change the monitor's modes without software, the fast screen refresh, and the backlight make it a great base to build an eink laptop.
 
 ## Next Steps
-The first post went over my reasons for building an eink laptop, some history about eink technology, recent advancements and the hardware I've selected to create an eink laptop. The next post in the series will be a teardown of the Dasung HD-FT, inspired from Kev Zettler's work.
+The first post went over my reasons for building an eink laptop, some history about eink technology, the eink modding community, recent advancements, and the hardware I've selected to create an eink laptop.
 
-If this post resonated, be it positive or negative, send me a [direct message](https://twitter.com/messages/compose?recipient_id=4648173315) on [Twitter](https://twitter.com/alexsoto_dev) and we can talk. Also ping if you'd like to know the updates on this post.
+The next post in the series will be a teardown of the Dasung HD-FT, inspired by Kev Zettler's work on the Dasung Paperlike Pro.[^zettler]
 
+If this post resonated positively or negatively, send me a [direct message](https://twitter.com/messages/compose?recipient_id=4648173315) on [Twitter](https://twitter.com/alexsoto_dev), and we can talk. Also, ping if you’d like to know the updates on this post or if you have suggestions, comments, questions, or would like to collaborate.
 
 [^eink-founding]: [E Ink - Wikipedia](https://en.wikipedia.org/wiki/E_Ink)
-
-[^gpl]: While Onyx Boox has made Android Tablets that can be used as a secondary monitor, in my experience with the Onyx Boox Max 2, the referesh rate and performance was no where near comparable to a comparable Dasung monitor of the same generation. In addition, there have been reports that [Onyx is violating the Linux kernel's license, refuses to release source code](https://news.ycombinator.com/item?id=23735962), as such I would prefer to not support them.
 
 [^pine64]: [Pine64 Announces a Native E-ink Single Board Computer](https://www.makeuseof.com/quartz64-e-ink-sbc/)
 
@@ -125,3 +130,7 @@ If this post resonated, be it positive or negative, send me a [direct message](h
 [^kindledev]: [Turning an old Amazon Kindle into a eink development platform](https://blog.lidskialf.net/2021/02/08/turning-an-old-kindle-into-a-eink-development-platform/)
 
 [^rm1]: [Parabola-rM](http://www.davisr.me/projects/parabola-rm/)
+
+[^zettler]: [Dasung Paperlike Pro Teardown](https://kevzettler.com/2018/02/11/dasung-paperlike-pro-teardown/)
+
+[^gpl]: While Onyx Boox has made Android Tablets that can be used as a secondary monitor, in my experience with the Onyx Boox Max 2, the referesh rate and performance was no where near comparable to a comparable Dasung monitor of the same generation. In addition, there have been reports that [Onyx is violating the Linux kernel's license, refuses to release source code](https://news.ycombinator.com/item?id=23735962), as such I would prefer to not support them.
