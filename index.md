@@ -10,6 +10,8 @@ I'm a community organizer, educator, software engineer, hacktivist and agent of 
 
 In the past I've worked as a labor rights organizer, a teacher at the Margarita Muñiz Academy and I'm currently an Expert In Residence at [Resilient Coders.](https://www.resilientcoders.org/)
 
+In my spare time I enjoy tinkering/playing/breaking things, 3D printing, painting, playing piano,  swimming and writing.
+
 This site is the [scattered and unfinished version of my thoughts](https://alexsoto.dev/impulse.html) while documenting what I'm currently learning and exploring.
 
 If a note resonates with you, or if you strongly disagree, please let me know. Send me a [direct message](https://twitter.com/messages/compose?recipient_id=4648173315) on [Twitter](https://twitter.com/alexsoto_dev) and we can talk.
