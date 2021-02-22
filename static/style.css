@@ -1,0 +1,39 @@
+.socialMediaLinks a {
+    font-size: 14px;
+    margin: 4px;
+    text-decoration: none;
+    padding: 10px 20px 10px 20px;
+    box-sizing: border-box;
+    width: 50px;
+    text-align: center;
+}
+
+.socialMediaLinks {
+    margin: 30px auto;
+    text-align: center;
+}
+
+.socialMediaLinks a.dsb-facebook-bg {
+    background: #3b5998;
+    color: #ffffff;
+}
+
+.socialMediaLinks a.dsb-twitter-bg {
+    background: #00aced;
+    color: #ffffff;
+}
+
+.socialMediaLinks a.dsb-linkedin-bg {
+    background: #0077b5;
+    color: #ffffff;
+}
+
+.socialMediaLinks a.dsb-reddit-bg {
+    background: #FF5700;
+    color: #ffffff;
+}
+
+.socialMediaLinks a.dsb-hacker-news-bg {
+    background: #ff4000;
+    color: #ffffff;
+}

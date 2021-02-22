@@ -9,14 +9,14 @@ A series where I’m documenting my process of designing and building an eink la
 This post is inspired from Kev Zettler's, [Dasung Paperlike Pro Teardown](https://kevzettler.com/2018/02/11/dasung-paperlike-pro-teardown/).
 
 ### Opening the Dasung Paperlike HD-FT
-|![Prying open the outer bezel of the display.](static/IMG_20210216_194558.jpg){#avatar .ui .centered .large .image}|
+|![Prying open the outer bezel of the display.](static/building-an-e-ink-laptop/IMG_20210216_194558.jpg){#avatar .ui .centered .large .image}|
 |:--:|
 |*Pyring open the outer bezel of the display*|
 
 Using a knife I was able to pry out the plastic part of the Dasung Monitor where it's glued. As I pryed everything open it I noticed the screws of different sizes that are a part of the monitor / panel, keeping it in place.
 
 
-|![Removed the outer bezel of the display](static/IMG_20210216_194714.jpg){#avatar .ui .centered .large .image}|
+|![Removed the outer bezel of the display](static/building-an-e-ink-laptop/IMG_20210216_194714.jpg){#avatar .ui .centered .large .image}|
 |:--:|
 |*Removed the outer bezel of the display*|
 
@@ -26,56 +26,56 @@ Removed all of the screws from the dasung monitor
 
 After removing the screws was able to remove the piece that keeps it all together.
 
-|![](static/IMG_20210216_203519.jpg){#avatar .ui .centered .large .image}|
+|![](static/building-an-e-ink-laptop/IMG_20210216_203519.jpg){#avatar .ui .centered .large .image}|
 |:--:|
 |**|
 
 I was able to open it and take a closer at the PCB's similar to Zettler's observation the chip's components were chemically peeled off to prevent reverse engineering. and similarly there were two pcb's, one for the eink display and another one to control the modes of the monitor.
 
 
-|![](static/IMG_20210216_201152.jpg){#avatar .ui .centered .large .image}|
+|![](static/building-an-e-ink-laptop/IMG_20210216_201152.jpg){#avatar .ui .centered .large .image}|
 |:--:|
 |**|
 
 
 
 
-|![](static/IMG_20210216_201158.jpg){#avatar .ui .centered .large .image}|
+|![](static/building-an-e-ink-laptop/IMG_20210216_201158.jpg){#avatar .ui .centered .large .image}|
 |:--:|
 |**|
 
-|![](static/IMG_20210216_201203.jpg){#avatar .ui .centered .large .image}|
-|:--:|
-|**|
-
-
-|![](static/IMG_20210216_201211.jpg){#avatar .ui .centered .large .image}|
+|![](static/building-an-e-ink-laptop/IMG_20210216_201203.jpg){#avatar .ui .centered .large .image}|
 |:--:|
 |**|
 
 
-|![](static/IMG_20210216_201821.jpg){#avatar .ui .centered .large .image}|
-|:--:|
-|**|
-
-|![](static/IMG_20210216_202037.jpg){#avatar .ui .centered .large .image}|
-|:--:|
-|**|
-
-|![](static/IMG_20210216_202024.jpg){#avatar .ui .centered .large .image}|
-|:--:|
-|**|
-
-|![](static/IMG_20210216_202009.jpg){#avatar .ui .centered .large .image}|
-|:--:|
-|**|
-
-|![](static/IMG_20210216_202020.jpg){#avatar .ui .centered .large .image}|
+|![](static/building-an-e-ink-laptop/IMG_20210216_201211.jpg){#avatar .ui .centered .large .image}|
 |:--:|
 |**|
 
 
-|![](static/IMG_20210216_201921.jpg){#avatar .ui .centered .large .image}|
+|![](static/building-an-e-ink-laptop/IMG_20210216_201821.jpg){#avatar .ui .centered .large .image}|
+|:--:|
+|**|
+
+|![](static/building-an-e-ink-laptop/IMG_20210216_202037.jpg){#avatar .ui .centered .large .image}|
+|:--:|
+|**|
+
+|![](static/building-an-e-ink-laptop/IMG_20210216_202024.jpg){#avatar .ui .centered .large .image}|
+|:--:|
+|**|
+
+|![](static/building-an-e-ink-laptop/IMG_20210216_202009.jpg){#avatar .ui .centered .large .image}|
+|:--:|
+|**|
+
+|![](static/building-an-e-ink-laptop/IMG_20210216_202020.jpg){#avatar .ui .centered .large .image}|
+|:--:|
+|**|
+
+
+|![](static/building-an-e-ink-laptop/IMG_20210216_201921.jpg){#avatar .ui .centered .large .image}|
 |:--:|
 |**|
 

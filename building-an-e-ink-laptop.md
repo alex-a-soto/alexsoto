@@ -7,7 +7,7 @@ tags:
 
 A series where I'm documenting my process of designing and building an eink laptop.
 
-|![](static/eink-t480.jpg){.ui .celled .table .centered .bordered .large .image}|
+|![](static/building-an-e-ink-laptop/eink-t480.jpg){.ui .centered .medium .image}|
 |:---:|
 |*The Dasung HD-FT eink monitor in it's original case paired with a headless Thinkpad T480.*|
 
@@ -38,10 +38,9 @@ I try to use my e-ink monitor as much as possible throughout the day to reduce e
 I am then having to switch the changes back for using a regular LCD for meetings or videos. I've already solved some of this by writing some scripts and making adjustments in some applications. Still, I would like to design the ground-up experience for using a device with a dedicated e-ink monitor and reduce friction.
 
 
-
 ## Creating an E Ink Laptop
 
-![](static/eink-t480.jpg){.ui .centered  .medium .image}
+![](static/building-an-e-ink-laptop/eink-t480.jpg){.ui .centered  .medium .image}
 
 I'll be using a 'headless' Thinkpad T480 [^pi] combined with the Dasung HD-FT [^dasung].
 
@@ -58,15 +57,15 @@ The Thinkpad T480 seems to be an ideal laptop for building an e-ink laptop, The 
 - It can be modded to use the classic 7-row keyboard. [^xytech]
 
 
-![](static/t480-mobo.jpg){.ui .centered .floated .medium .image}
-![](static/t480-no-lcd.jpg){.ui .left .medium .image}
+![](static/building-an-e-ink-laptop/t480-mobo.jpg){.ui .centered .floated .medium .image}
+![](static/building-an-e-ink-laptop/t480-no-lcd.jpg){.ui .left .medium .image}
 
 The hot-swappable battery and long battery life are essential for any portable setup, especially with an e-ink monitor. The T480 supports up to 64Gb of ram and two Nvme drives, providing plenty of power and expansion as a daily driver.
 
 Since the Dasung monitors connect via HDMI and receive power through USB, the T480 has all of the necessary ports without an adapter. Lastly, after removing the lid cover with the T480, there is room here to hack and mod the Dasung screen to the T480.
 
 ## Dasung HD-FT
-![](static/dasung-monitor.jpg){.ui .centered .medium .image}
+![](static/building-an-e-ink-laptop/dasung-monitor.jpg){.ui .centered .medium .image}
 
 Dasung currently is the only manufacturer of e-ink monitors that I'm aware of [^gpl], and their third-generation monitors are a substantial upgrade from prior generations.
 
@@ -85,6 +84,17 @@ The first post went over my reasons for building an e-ink laptop, some history a
 The next post in the series will be a teardown of the Dasung HD-FT, inspired by Kev Zettler's work on the Dasung Paperlike Pro.[^zettler]
 
 If this post resonated positively or negatively, send me a [direct message](https://twitter.com/messages/compose?recipient_id=4648173315) on [Twitter](https://twitter.com/alexsotodev), and we can talk. Also, ping if you’d like to know the updates on this post or if you have suggestions, comments, questions, or would like to collaborate.
+
+
+<section class="socialMediaLinks">
+<a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Falexsoto.dev&quote=" target="_blank" title="Share on Facebook" onclick="window.open('https://www.facebook.com/sharer/sharer.php?u=' + encodeURIComponent(document.URL) + '&quote=' + encodeURIComponent(document.URL)); return false;"
+class="dsb-btn dsb-facebook-bg dsb-white"><i class="fab fa-facebook"></i> Share</a>
+<a href="https://twitter.com/intent/tweet?source=https%3A%2F%2Falexsoto.dev&text=:%20http%3A%2F%2Falexsoto.dev&via=asotodev" target="_blank" title="Tweet" onclick="window.open('https://twitter.com/intent/tweet?text=' + encodeURIComponent(document.title) + ':%20' + encodeURIComponent(document.URL)); return false;" class="dsb-btn dsb-twitter-bg dsb-white"><i class="fab fa-twitter"></i> Tweet</a>
+<a href="https://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Falexsoto.dev&title=&summary=&source=http%3A%2F%2Falexsoto.dev" target="_blank" title="Share on LinkedIn" onclick="window.open('https://www.linkedin.com/shareArticle?mini=true&url=' + encodeURIComponent(document.URL) + '&title=' +  encodeURIComponent(document.title)); return false;"
+class="dsb-btn dsb-linkedin-bg dsb-white"><i class="fab fa-linkedin"></i> Share</a>
+<a href="https://www.reddit.com/submit?url=https%3A%2F%2Falexsoto.dev&title=" target="_blank" title="Share on Reddit" onclick="window.open('https://www.reddit.com/submit?url=' + encodeURIComponent(document.URL) + '&title=' +  encodeURIComponent(document.title)); return false;" class="dsb-btn dsb-reddit-bg dsb-white"><i class="fab fa-reddit"></i> Share</a>
+<a href="https://news.ycombinator.com/submitlink?u=&t=" target="_blank" title="Share on Hacker News" onclick="window.open('https://news.ycombinator.com/submitlink?u=' + encodeURIComponent(document.URL) + '&t=' + encodeURIComponent(document.title)); return false;" class="dsb-btn dsb-hacker-news-bg dsb-white"><i class="fab fa-hacker-news"></i> Share</a>
+</section>
 
 [^eink-founding]: [E Ink - Wikipedia](https://en.wikipedia.org/wiki/E_Ink)
 
