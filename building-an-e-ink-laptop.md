@@ -35,7 +35,7 @@ I try to use my e-ink monitor as much as possible throughout the day to reduce e
 - adjusting font sizes.
 - changing themes in different applications.
 
-I am then having to switch the changes back for using a regular LCD for meetings or videos. I've already solved some of this by writing some scripts and making adjustments in some applications. Still, I would like to design the ground-up experience for using a device with a dedicated e-ink monitor and reduce friction.
+I am then having to switch the changes back for using a regular LCD for meetings or videos. I've already solved some of this by writing some scripts and making adjustments in some applications. Still, I would like to design experience from the ground-up for using a device with a dedicated e-ink monitor and reduce friction.
 
 
 ## Creating an E Ink Laptop
