@@ -12,6 +12,14 @@
     align-items: center;
 }
 
+.socialMediaLinks a:hover {
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+    transition: 0.1s ease;
+
+}
+
 
 .socialMediaLinks a.dsb-facebook-bg {
     background: #3b5998;
