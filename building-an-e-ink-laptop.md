@@ -69,14 +69,13 @@ Since the Dasung monitors connect via HDMI and receive power through USB, the T4
 
 Dasung currently is the only manufacturer of e-ink monitors that I'm aware of [^gpl], and their third-generation monitors are a substantial upgrade from prior generations.
 
-
 Directly from the monitor, you can:
 - Change image modes (M1, M2, M3, Fast, Fast+, Fast++, Black, Black+, Black++)
 - Adjust contrast
 - Clear the screen
 - Turn on and off the backlight
 
-The ability to easily change the monitor's modes without software, the fast screen refresh, and the backlight make it a great base to build an e-ink laptop.
+The ability to easily change the monitor's modes without software, the fast screen refresh, screen resolution of 2200×1650 and the backlight make it a great base to build an e-ink laptop.
 
 ## Next Steps
 The first post went over my reasons for building an e-ink laptop, some history about e-ink technology, the e-ink modding community, recent advancements, and the hardware I've selected to create an e-ink laptop.
