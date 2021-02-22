@@ -85,16 +85,14 @@ The next post in the series will be a teardown of the Dasung HD-FT, inspired by 
 
 If this post resonated positively or negatively, send me a [direct message](https://twitter.com/messages/compose?recipient_id=4648173315) on [Twitter](https://twitter.com/alexsotodev), and we can talk. Also, ping if you’d like to know the updates on this post or if you have suggestions, comments, questions, or would like to collaborate.
 
-
 <section class="socialMediaLinks">
 <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Falexsoto.dev&quote=" target="_blank" title="Share on Facebook" onclick="window.open('https://www.facebook.com/sharer/sharer.php?u=' + encodeURIComponent(document.URL) + '&quote=' + encodeURIComponent(document.URL)); return false;"
 class="dsb-btn dsb-facebook-bg dsb-white"><i class="fab fa-facebook"></i> Share</a>
-<a href="https://twitter.com/intent/tweet?source=https%3A%2F%2Falexsoto.dev&text=:%20http%3A%2F%2Falexsoto.dev&via=asotodev" target="_blank" title="Tweet" onclick="window.open('https://twitter.com/intent/tweet?text=' + encodeURIComponent(document.title) + ':%20' + encodeURIComponent(document.URL)); return false;" class="dsb-btn dsb-twitter-bg dsb-white"><i class="fab fa-twitter"></i> Tweet</a>
-<a href="https://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Falexsoto.dev&title=&summary=&source=http%3A%2F%2Falexsoto.dev" target="_blank" title="Share on LinkedIn" onclick="window.open('https://www.linkedin.com/shareArticle?mini=true&url=' + encodeURIComponent(document.URL) + '&title=' +  encodeURIComponent(document.title)); return false;"
+<a href="https://twitter.com/intent/tweet?source=https%3A%2F%2Falexsoto.dev&text=:%20https%3A%2F%2Falexsoto.dev&via=asotodev" target="_blank" title="Tweet" onclick="window.open('https://twitter.com/intent/tweet?text=' + encodeURIComponent(document.title) + ':%20' + encodeURIComponent(document.URL)); return false;" class="dsb-btn dsb-twitter-bg dsb-white"><i class="fab fa-twitter"></i> Tweet</a>
+<a href="https://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Falexsoto.dev&title=&summary=&source=https%3A%2F%2Falexsoto.dev" target="_blank" title="Share on LinkedIn" onclick="window.open('https://www.linkedin.com/shareArticle?mini=true&url=' + encodeURIComponent(document.URL) + '&title=' +  encodeURIComponent(document.title)); return false;"
 class="dsb-btn dsb-linkedin-bg dsb-white"><i class="fab fa-linkedin"></i> Share</a>
 <a href="https://www.reddit.com/submit?url=https%3A%2F%2Falexsoto.dev&title=" target="_blank" title="Share on Reddit" onclick="window.open('https://www.reddit.com/submit?url=' + encodeURIComponent(document.URL) + '&title=' +  encodeURIComponent(document.title)); return false;" class="dsb-btn dsb-reddit-bg dsb-white"><i class="fab fa-reddit"></i> Share</a>
-<a href="https://news.ycombinator.com/submitlink?u=&t=" target="_blank" title="Share on Hacker News" onclick="window.open('https://news.ycombinator.com/submitlink?u=' + encodeURIComponent(document.URL) + '&t=' + encodeURIComponent(document.title)); return false;" class="dsb-btn dsb-hacker-news-bg dsb-white"><i class="fab fa-hacker-news"></i> Share</a>
-</section>
+<a href="https://news.ycombinator.com/submitlink?u=https%3A%2F%2Falexsoto.dev&t=https%3A%2F%2Falexsoto.dev&via=asotodev" target="_blank" title="Share on Hacker News" onclick="window.open('https://news.ycombinator.com/submitlink?u=' + encodeURIComponent(document.URL) + '&t=' + encodeURIComponent(document.title)); return false;" class="dsb-btn dsb-hacker-news-bg dsb-white"><i class="fab fa-hacker-news"></i> Share</a></section>
 
 [^eink-founding]: [E Ink - Wikipedia](https://en.wikipedia.org/wiki/E_Ink)
 

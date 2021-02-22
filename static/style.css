@@ -1,17 +1,17 @@
-.socialMediaLinks a {
-    font-size: 14px;
-    margin: 4px;
-    text-decoration: none;
-    padding: 10px 20px 10px 20px;
-    box-sizing: border-box;
-    width: 50px;
+.socialMediaLinks {
     text-align: center;
 }
 
-.socialMediaLinks {
-    margin: 30px auto;
-    text-align: center;
+.socialMediaLinks a {
+    display: inline-grid;
+    grid-gap: 4px;
+    grid-template-columns: repeat(auto-fit, minmax(10px, 1fr));
+    grid-template-rows: repeat(2, 4px);
+    width: 80px;
+    padding: 10px 25px 2px 1px;
+    align-items: center;
 }
+
 
 .socialMediaLinks a.dsb-facebook-bg {
     background: #3b5998;
