@@ -1,22 +1,4 @@
 <style>
-.socialMediaLinks {
-    text-align: center;
-}
-
-.socialMediaLinks .ui.reddit.button {
-    background: #FF5700;
-    color: #ffffff;
-}
-
-.socialMediaLinks .ui.hacker.news.button {
-    background: #ff4000;
-    color: #ffffff;
-}
-
-</style>
-
-<style>
-
   html {
   font-size: 15px !important;
   }
@@ -81,6 +63,58 @@ body div.zettel-view .zettel-content h4 {
 }
 
 </style>
+
+<!-- add social share buttons  -->
+<script>
+  window.addEventListener("load", function(){
+      var socialButtons = document.getElementById("socialMediaLinks");
+
+      socialButtons.innerHTML +=
+          "<a id='facebook' title='Share on Facebook' class='ui facebook button'><i class='facebook icon'></i> Share</a><a id='twitter' title='Tweet' class='ui twitter button'><i class='twitter icon'></i> Tweet</a><a id='linkedin' title='Share on LinkedIn' class='ui linkedin button'><i class='linkedin icon'></i> Share</a><a id='reddit' title='Share on Reddit' class='ui reddit button'><i class='reddit icon'></i> Share</a><a id='hnews' title='Share on Hacker News' class='ui hacker news button'><i class='hacker news icon'></i> Share</a>"
+
+
+      document.getElementById("facebook").addEventListener("click", function(e) {
+          window.open('https://www.facebook.com/sharer/sharer.php?u=' + encodeURIComponent(document.URL) + '&quote=' + encodeURIComponent(document.URL)); return false;
+      });
+
+      document.getElementById("twitter").addEventListener("click", function(e) {
+          window.open('https://twitter.com/intent/tweet?text=' + encodeURIComponent(document.title) + ':%20' + encodeURIComponent(document.URL)); return false;
+      });
+
+      document.getElementById("linkedin").addEventListener("click", function(e) {
+          window.open('https://www.linkedin.com/shareArticle?mini=true&url=' + encodeURIComponent(document.URL) + '&title=' +  encodeURIComponent(document.title)); return false;
+      });
+
+      document.getElementById("reddit").addEventListener("click", function(e) {
+          window.open('https://www.reddit.com/submit?url=' + encodeURIComponent(document.URL) + '&title=' +  encodeURIComponent(document.title)); return false;
+      });
+
+      document.getElementById("hnews").addEventListener("click", function(e) {
+          window.open('https://news.ycombinator.com/submitlink?u=' + encodeURIComponent(document.URL) + '&t=' + encodeURIComponent(document.title)); return false;
+      });
+
+
+  })
+  </script>
+
+<style>
+#socialMediaLinks {
+    text-align: center;
+}
+
+#socialMediaLinks .ui.reddit.button {
+    background: #FF5700;
+    color: #ffffff;
+}
+
+#socialMediaLinks .ui.hacker.news.button {
+    background: #ff4000;
+    color: #ffffff;
+}
+
+</style>
+
+
 
 
 <!-- replace logo  -->
