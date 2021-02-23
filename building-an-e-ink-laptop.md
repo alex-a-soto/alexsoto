@@ -89,10 +89,6 @@ If this post resonated positively or negatively, send me a [direct message](http
 <section id="socialMediaLinks"></section>
 
 <div id="commento"></div>
-<script defer
-  src="https://cdn.commento.io/js/commento.js">
-</script>
-
 
 [^e-ink-founding]: [E Ink - Wikipedia](https://en.wikipedia.org/wiki/E_Ink)
 
