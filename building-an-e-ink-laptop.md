@@ -88,6 +88,12 @@ If this post resonated positively or negatively, send me a [direct message](http
 
 <section id="socialMediaLinks"></section>
 
+<div id="commento"></div>
+<script defer
+  src="https://cdn.commento.io/js/commento.js">
+</script>
+
+
 [^e-ink-founding]: [E Ink - Wikipedia](https://en.wikipedia.org/wiki/E_Ink)
 
 [^pine64]: [Pine64 Announces a Native E-ink Single Board Computer](https://www.makeuseof.com/quartz64-e-ink-sbc/)
