@@ -15,6 +15,4 @@ This site is the [scattered and unfinished version of my thoughts](https://alexs
 
 If a post resonated positively or negatively, send me a [direct message](https://twitter.com/messages/compose?recipient_id=4648173315) on [Twitter](https://twitter.com/alexsotodev), and we can talk. Also, ping if you’d like to know the updates of a post or if you have suggestions, comments, questions, or would like to collaborate.
 
-<section id="socialMediaLinks"></section>
-
 [[z:zettels?tag=timeline/**&timeline&cf]]
