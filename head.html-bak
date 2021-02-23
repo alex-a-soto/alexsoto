@@ -11,6 +11,6 @@ class="ui facebook button"><i class="facebook icon"></i> Share</a>
 class="ui linkedin button"><i class="linkedin icon"></i> Share</a>
 <a href="https://www.reddit.com/submit?url=https%3A%2F%2Falexsoto.dev&title=" target="_blank" title="Share on Reddit" onclick="window.open('https://www.reddit.com/submit?url=' + encodeURIComponent(document.URL) + '&title=' +  encodeURIComponent(document.title)); return false;" class="ui reddit button"><i class="reddit icon"></i> Share</a>
 <a href="https://news.ycombinator.com/submitlink?u=https%3A%2F%2Falexsoto.dev&t=https%3A%2F%2Falexsoto.dev&via=asotodev" target="_blank" title="Share on Hacker News" onclick="window.open('https://news.ycombinator.com/submitlink?u=' + encodeURIComponent(document.URL) + '&t=' + encodeURIComponent(document.title)); return false;" class="ui hacker news button"><i class="hacker news icon"></i> Share</a></section>
-</p>
+_</p>
 </body>
 </html>
