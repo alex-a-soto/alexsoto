@@ -6,9 +6,9 @@ tags:
 ---
 # Building an E-Ink Laptop
 
-A series where I'm documenting my process of designing and building an eink laptop.
+![](static/building-an-e-ink-laptop/eink-t480.jpg){.ui .right .floated .small .image}
 
-![](static/building-an-e-ink-laptop/eink-t480.jpg){.ui .right .floated .medium .image}
+A series where I'm documenting my process of designing and building an eink laptop.
 
 
 ## Background
@@ -42,7 +42,7 @@ I am then having to switch the changes back for using a regular LCD for meetings
 
 I'll be using a 'headless' Thinkpad T480 [^pi] combined with the Dasung HD-FT [^dasung].
 
-![](static/building-an-e-ink-laptop/eink-t480.jpg){.ui .right .floated .medium .spaced .image}
+![](static/building-an-e-ink-laptop/eink-t480.jpg){.ui .centered .medium .image}
 
 ## Thinkpad T480
 
@@ -65,9 +65,10 @@ Since the Dasung monitors connect via HDMI and receive power through USB, the T4
 
 
 ## Dasung HD-FT
-![](static/building-an-e-ink-laptop/dasung-monitor.jpg){.ui .right .floated .medium .image}
 
 Dasung currently is the only manufacturer of e-ink monitors that I'm aware of [^gpl], and their third-generation monitors are a substantial upgrade from prior generations.
+
+![](static/building-an-e-ink-laptop/dasung-monitor.jpg){.ui .centered .medium .image}
 
 Directly from the monitor, you can:
 - Change image modes (M1, M2, M3, Fast, Fast+, Fast++, Black, Black+, Black++)
@@ -76,6 +77,9 @@ Directly from the monitor, you can:
 - Turn on and off the backlight
 
 The ability to easily change the monitor's modes without software, the fast screen refresh, screen resolution of 2200×1650 and the backlight make it a great base to build an e-ink laptop.
+
+
+
 
 ## Next Steps
 The first post went over my reasons for building an e-ink laptop, some history about e-ink technology, the e-ink modding community, recent advancements, and the hardware I've selected to create an e-ink laptop.
