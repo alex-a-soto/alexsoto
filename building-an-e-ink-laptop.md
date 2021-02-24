@@ -19,7 +19,7 @@ Throughout the years, we've seen several e-ink products and prototypes: e-ink fi
 
 
 ## Why isn't there an E Ink Laptop?
-There have been attempts in the past to create a similar device: Pixel Qi and OLPC[^pixelqi], Boox Typewriter[^boox typewriter], Yoga Book C930[^C930] and the ThinkBook Plus[^thinkbook-plus]. These attempts did not materialize, were discontinued, or were not sufficiently suitable to meet users' demands due to hardware or lack of a cohesive UX/UI paradigm. To make matters worse, the E Ink Corporation holds the patents for its e-ink technology and only licenses its technology to large manufacturers making availability or mass adoption difficult.[^patent]
+There have been attempts in the past to create a similar device: Pixel Qi and OLPC[^pixelqi], Boox Typewriter[^boox typewriter], Yoga Book C930[^C930] and the ThinkBook Plus[^thinkbook-plus]. These attempts did not materialize, were discontinued, or were not sufficiently suitable to meet users' demands due to hardware or lack of a cohesive UX/UI paradigm. ~~To make matters worse, the E Ink Corporation holds the patents for its e-ink technology and only licenses its technology to large manufacturers making availability or mass adoption difficult.~~[^patent]
 
 Fortunately, some of the most exciting work and innovation happening today is in the e-ink modding community[^e-ink-mechanical]. There have been attempts to re-purposing ereaders: as a calendar,[^cal] to display a static image or site[^nyt], Kobo devices running GNU/Linux[^kobo], Amazon Kindle devices repurposed as a development platform[^kindledev], the Remarkable 1 running Parabola[^rm1], and PINE 64 recently announcing a native e-ink single-board computer[^pine64].
 
@@ -116,7 +116,7 @@ If this post resonated positively or negatively, send me a [direct message](http
 
 [^C930]: [Lenovo Yoga Book C930 review: two screens and lots of compromises](https://www.theverge.com/2018/10/25/18019840/lenovo-yoga-book-c930-review-e-ink-tablet-laptop-windows)
 
-[^patent]: [Ask HN: Why are e-ink note-taking devices so expensive compared to iPads?](https://news.ycombinator.com/item?id=26143407)
+[^patent]: Correction, this is an unsubstantiated claim. [Ask HN: Why are e-ink note-taking devices so expensive compared to iPads?](https://news.ycombinator.com/item?id=26143407)
 
 [^flexible]: Video: [E Ink releases new flexible and foldable 32 inch E-Paper Display](https://www.youtube.com/watch?v=j5Jf_3xqpF8)
 
