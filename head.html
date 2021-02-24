@@ -70,7 +70,7 @@ body div.zettel-view .zettel-content h4 {
       var socialButtons = document.getElementById("socialMediaLinks");
 
       socialButtons.innerHTML +=
-          "<a id='facebook' title='Share on Facebook' class='ui facebook button'><i class='facebook icon'></i> Share</a><a id='twitter' title='Tweet' class='ui twitter button'><i class='twitter icon'></i> Tweet</a><a id='linkedin' title='Share on LinkedIn' class='ui linkedin button'><i class='linkedin icon'></i> Share</a><a id='reddit' title='Share on Reddit' class='ui reddit button'><i class='reddit icon'></i> Share</a><a id='hnews' title='Share on Hacker News' class='ui hacker news button'><i class='hacker news icon'></i> Share</a>"
+          "<a id='facebook' title='Share on Facebook' class='ui facebook button'><i class='facebook icon'></i> Share</a><a id='twitter' title='Tweet' class='ui twitter button'><i class='twitter icon'></i> Tweet</a><a id='linkedin' title='Share on LinkedIn' class='ui linkedin button'><i class='linkedin icon'></i> Share</a><a id='reddit' title='Share on Reddit' class='ui reddit button'><i class='reddit icon'></i> Share</a><a id='hnews' title='Share on Hacker News' class='ui hacker news button'><i class='hacker news icon'></i> Share</a><a id='rss' title='Subscribe to RSS feed' class='ui rss button'><i class='rss square icon'></i> RSS</a>"
 
 
       document.getElementById("facebook").addEventListener("click", function(e) {
@@ -93,6 +93,11 @@ body div.zettel-view .zettel-content h4 {
           window.open('https://news.ycombinator.com/submitlink?u=' + encodeURIComponent(document.URL) + '&t=' + encodeURIComponent(document.title)); return false;
       });
 
+      document.getElementById("rss").addEventListener("click", function(e) {
+          window.open('https://politepol.com/fd/xgLBcedTCLvB');
+      });
+
+
 
   })
   </script>
@@ -109,6 +114,11 @@ body div.zettel-view .zettel-content h4 {
 
 #socialMediaLinks .ui.hacker.news.button {
     background: #ff4000;
+    color: #ffffff;
+}
+
+#socialMediaLinks .ui.rss.button {
+    background: #FF9249;
     color: #ffffff;
 }
 

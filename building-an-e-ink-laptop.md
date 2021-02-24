@@ -1,5 +1,6 @@
 ---
 date: 2021-02-17T22:13
+genRSS: True
 tags:
   - timeline
   - e-ink
