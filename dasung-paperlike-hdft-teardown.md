@@ -1,90 +1,116 @@
 ---
 date: 2021-02-20T16:02
-unlisted: true
+tags:
+  - timeline
+  - e-ink
 ---
 
 # Dasung Paperlike HD-FT teardown
-A series where I’m documenting my process of designing and building an eink laptop.[^dm]
+A series where I’m documenting my process of designing and building an eink laptop.
+- [[[building-an-e-ink-laptop]]]
 
-This post is inspired from Kev Zettler's, [Dasung Paperlike Pro Teardown](https://kevzettler.com/2018/02/11/dasung-paperlike-pro-teardown/).
+In my first post, [Building an E-Ink Laptop](https://alexsoto.dev/building-an-e-ink-laptop.html), I went over some history about e-ink technology, the e-ink modding community, recent advancements, and the hardware I've selected to create an e-ink laptop.
 
-### Opening the Dasung Paperlike HD-FT
-|![Prying open the outer bezel of the display.](static/building-an-e-ink-laptop/IMG_20210216_194558.jpg){#avatar .ui .centered .large .image}|
-|:--:|
-|*Pyring open the outer bezel of the display*|
+This post in the series will be a teardown of the Dasung HD-FT, inspired from Kev Zettler's work on the, [Dasung Paperlike Pro Teardown](https://kevzettler.com/2018/02/11/dasung-paperlike-pro-teardown/). Thank you, [Kev Zettler](https://kevzettler.com/), for showing your work on the Dasung Paperlike Pro and making all of this possible. I will later create an accompanying video to go over the Dasung HD-FT teardown process.
 
-Using a knife I was able to pry out the plastic part of the Dasung Monitor where it's glued. As I pryed everything open it I noticed the screws of different sizes that are a part of the monitor / panel, keeping it in place.
+![](static/building-an-e-ink-laptop/IMG_20210216_203519.jpg){.ui .centered .large .image}
 
+## Overview of the Dasung HD-FT
 
-|![Removed the outer bezel of the display](static/building-an-e-ink-laptop/IMG_20210216_194714.jpg){#avatar .ui .centered .large .image}|
-|:--:|
-|*Removed the outer bezel of the display*|
+The Dasung HD-FT is a third-generation e-ink monitor with a display of 13.3", a screen resolution of 2200x1650, a touchscreen, and an adjustable backlight. The monitor connects via a proprietary Y cable, with connections for USB and HDMI; additionally, the Dasung HD-FT can be powered by the micro-usb connection on the left side.
 
-Removed all of the screws from the dasung monitor
+Once connected to a computer, it acts as a second monitor or, for our purposes, a primary monitor for our e-ink laptop. The monitor's physical buttons allow you to adjust the contrast, brightness, clear the screen, and change modes.
 
+The modes (M1, M2, M3, Fast, Fast++, Black, Black+, Black++) correspond to how the monitor displays what's rendered in the screen using different shades of grey or black/white.
 
+Let's take a closer look and dismantle the Dasung HD-FT and look at its components.
 
-After removing the screws was able to remove the piece that keeps it all together.
+## Opening the Dasung Paperlike HD-FT
+Similar to Zettler's observations and approach, the Dasung HD-FT is made of one piece of construction. I first began with a knife, carefully prying the outer edges of the Dasung Monitor where it's all glued and making my way slowly through all of the sides.
 
-|![](static/building-an-e-ink-laptop/IMG_20210216_203519.jpg){#avatar .ui .centered .large .image}|
-|:--:|
-|**|
-
-I was able to open it and take a closer at the PCB's similar to Zettler's observation the chip's components were chemically peeled off to prevent reverse engineering. and similarly there were two pcb's, one for the eink display and another one to control the modes of the monitor.
+![Prying open the outer bezel of the display.](static/building-an-e-ink-laptop/IMG_20210216_194558.jpg){.ui .centered .large .image}
 
 
-|![](static/building-an-e-ink-laptop/IMG_20210216_201152.jpg){#avatar .ui .centered .large .image}|
-|:--:|
-|**|
+Once I finished prying through all of the sides, what became visible were the screws that were holding everything together.
+
+![Removed the outer bezel of the display](static/building-an-e-ink-laptop/IMG_20210216_194714.jpg){.ui .centered .large .image}
 
 
+After removing all of the screws, I was able to gain access to the panel!
+
+![](static/building-an-e-ink-laptop/IMG_20210216_203519.jpg){.ui .centered .large .image}
+
+## The E-ink display module and control board
+Like Zettler discovered, the Dasung HD-FT chip components upon closer inspection were also chemically peeled off to prevent reverse engineering of the e-ink display and control board.
+
+![](static/building-an-e-ink-laptop/IMG_20210216_201821.jpg){.ui .centered .large .image}
+
+{.ui .medium .images .centered}
+![](static/building-an-e-ink-laptop/IMG_20210216_201158.jpg){.ui .centered .medium .image}
+![](static/building-an-e-ink-laptop/IMG_20210216_201211.jpg){.ui .centered .medium .image}
 
 
-|![](static/building-an-e-ink-laptop/IMG_20210216_201158.jpg){#avatar .ui .centered .large .image}|
-|:--:|
-|**|
+## ES133TT3 Display Module
+![](static/building-an-e-ink-laptop/IMG_20210216_201921.jpg){.ui .centered .large .image}
 
-|![](static/building-an-e-ink-laptop/IMG_20210216_201203.jpg){#avatar .ui .centered .large .image}|
-|:--:|
-|**|
+{.ui .small .images .centered}
+![](static/building-an-e-ink-laptop/IMG_20210216_202037.jpg){.ui .centered .large .image}
+![](static/building-an-e-ink-laptop/IMG_20210216_202009.jpg){.ui .centered .large .image}
+![](static/building-an-e-ink-laptop/IMG_20210216_202020.jpg){.ui .centered .large .image}
+![](static/building-an-e-ink-laptop/IMG_20210216_202024.jpg){.ui .centered .large .image}
 
+The e-ink display module model number for the Dasung HD-FT is the: **ES133TT3**{.center}
 
-|![](static/building-an-e-ink-laptop/IMG_20210216_201211.jpg){#avatar .ui .centered .large .image}|
-|:--:|
-|**|
+beck-elektronik[^beck-elektronik] describes it as "_reflective electrophoretic E Ink technology display module based on active matrix TFT and plastic substrate. The plastic substrate is protected by an outer covering._"
 
+Specification:
+- Size: 13.3 inch
+- Resolution (HxV): 2200 * 1650
+- Active Area: 270.60 * 202.95 mm
+- Outline Dimensions: 287.00 * 215.50 mm
+- Dpi: 206
+- E Ink Film: Carta 1.2
+- Refresh Time: 450 ms
+- Backplane: Flexible
+- Total Thickness: 0.65 mm
+- Total Weight: 68 g
+- Grey Level: 16
+- Surface Treatment: Anti-Glare
+- Partial Update: yes
 
-|![](static/building-an-e-ink-laptop/IMG_20210216_201821.jpg){#avatar .ui .centered .large .image}|
-|:--:|
-|**|
-
-|![](static/building-an-e-ink-laptop/IMG_20210216_202037.jpg){#avatar .ui .centered .large .image}|
-|:--:|
-|**|
-
-|![](static/building-an-e-ink-laptop/IMG_20210216_202024.jpg){#avatar .ui .centered .large .image}|
-|:--:|
-|**|
-
-|![](static/building-an-e-ink-laptop/IMG_20210216_202009.jpg){#avatar .ui .centered .large .image}|
-|:--:|
-|**|
-
-|![](static/building-an-e-ink-laptop/IMG_20210216_202020.jpg){#avatar .ui .centered .large .image}|
-|:--:|
-|**|
+Their website also lists an EPD driver kit that's compatible with it, the ES133TT3.[^driver]
 
 
-|![](static/building-an-e-ink-laptop/IMG_20210216_201921.jpg){#avatar .ui .centered .large .image}|
-|:--:|
-|**|
+## Next Steps
+This second post provided an overview of the Dasung HD-FT, a teardown of the Dasung HD-FT and its internal components, and identifying the display module used, the ES133TT3.
 
-According to the panel that was disassembled, this appears to be the e-ink panel that seems to be used: ES133TT3 [^ES133TT3]:
+The following post in the series will be a teardown of the Thinkpad T480 that we will be using to build our e-ink laptop.
 
-### The Dasung E-Ink display module
+{.ui .horizontal .divider .header}
 
-### The Control Boards
+## About
+![](static/profile.jpeg){#avatar .ui .left .floated .small .image}
 
-[^dm]: If you think this post resonated, be it positive or negative, Send me a [direct message](https://twitter.com/messages/compose?recipient_id=4648173315) on [Twitter](https://twitter.com/alexsotodev) and we can talk. Also ping if you'd like to know the updates on this post.
+Hi, I’m Alexander Soto.
 
-[^ES133TT3]: [Panelook E Ink ES133TT3](https://www.panelook.com/ES133TT3_E%20Ink_13.3_EPD_overview_31869.html)
+I’m a community organizer, educator, software engineer, hacktivist, and agent of social change. My interests are in exploring community-building, social justice, education, and leveraging technology to address social problems.
+
+In the past, I’ve worked as a labor rights organizer, a teacher, and I’m currently an Expert In Residence at [Resilient Coders.](https://www.resilientcoders.org/).
+
+I enjoy tinkering/playing/breaking things, 3D printing, painting, playing piano, swimming, and writing in my spare time.
+
+This site is the [scattered and unfinished version of my thoughts](https://alexsoto.dev/impulse.html) while documenting what I’m currently learning and exploring.
+
+If a post resonated positively or negatively, send me a [direct message](https://twitter.com/messages/compose?recipient_id=4648173315) on [Twitter](https://twitter.com/alexsotodev), an [email](mailto:contact@alexsoto.dev), or subscribe to the [mailing list](https://buttondown.email/alexsotodev) and we can talk. Also, ping if you’d like to know the updates of a post or if you have suggestions, comments, questions, or would like to collaborate.
+
+<div class="ui section divider"></div>
+
+<section id="socialMediaLinks"></section>
+
+<div class="ui section divider"></div>
+
+<div id="commento"></div>
+
+
+[^beck-elektronik]: [ES133TT3 Active Matrix E-Paper Display](https://www.beck-elektronik.de/en/products/displays/e-paper-display-epd/active-matrix-epd/es133tt3/)
+[^driver]: [EPD Driver Display Controller](https://www.beck-elektronik.de/en/products/displays/display-controller/epd-controller/epd-driver/#tab-8054)

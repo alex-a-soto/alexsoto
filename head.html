@@ -73,6 +73,8 @@ body div.zettel-view .zettel-content h4 {
           "<a id='facebook' title='Share on Facebook' class='ui facebook button'><i class='facebook icon'></i> Share</a><a id='twitter' title='Tweet' class='ui twitter button'><i class='twitter icon'></i> Tweet</a><a id='linkedin' title='Share on LinkedIn' class='ui linkedin button'><i class='linkedin icon'></i> Share</a><a id='reddit' title='Share on Reddit' class='ui reddit button'><i class='reddit icon'></i> Share</a><a id='hnews' title='Share on Hacker News' class='ui hacker news button'><i class='hacker news icon'></i> Share</a><a id='rss' title='Subscribe to RSS feed' class='ui rss button'><i class='rss square icon'></i> RSS</a>"
 
 
+
+
       document.getElementById("facebook").addEventListener("click", function(e) {
           window.open('https://www.facebook.com/sharer/sharer.php?u=' + encodeURIComponent(document.URL) + '&quote=' + encodeURIComponent(document.URL)); return false;
       });
