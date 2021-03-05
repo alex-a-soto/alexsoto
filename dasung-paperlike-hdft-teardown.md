@@ -13,7 +13,10 @@ In my first post, [Building an E-Ink Laptop](https://alexsoto.dev/building-an-e-
 
 This post in the series will be a teardown of the Dasung HD-FT, inspired from Kev Zettler's work on the, [Dasung Paperlike Pro Teardown](https://kevzettler.com/2018/02/11/dasung-paperlike-pro-teardown/). Thank you, [Kev Zettler](https://kevzettler.com/), for showing your work on the Dasung Paperlike Pro and making all of this possible. I will later create an accompanying video to go over the Dasung HD-FT teardown process.
 
-![](static/building-an-e-ink-laptop/IMG_20210216_203519.jpg){.ui .centered .large .image}
+<a href="static/building-an-e-ink-laptop/IMG_20210216_203519.jpg" target="_blank" class="ui centered large image">
+  <img src="static/building-an-e-ink-laptop/IMG_20210216_203519.jpg">
+</a>
+
 
 ## Overview of the Dasung HD-FT
 
@@ -28,36 +31,58 @@ Let's take a closer look and dismantle the Dasung HD-FT and look at its componen
 ## Opening the Dasung Paperlike HD-FT
 Similar to Zettler's observations and approach, the Dasung HD-FT is made of one piece of construction. I first began with a knife, carefully prying the outer edges of the Dasung Monitor where it's all glued and making my way slowly through all of the sides.
 
-![Prying open the outer bezel of the display.](static/building-an-e-ink-laptop/IMG_20210216_194558.jpg){.ui .centered .large .image}
-
+<a href="static/building-an-e-ink-laptop/IMG_20210216_194558.jpg" target="_blank" class="ui centered large image">
+  <img src="static/building-an-e-ink-laptop/IMG_20210216_194558.jpg">
+</a>
 
 Once I finished prying through all of the sides, what became visible were the screws that were holding everything together.
 
-![Removed the outer bezel of the display](static/building-an-e-ink-laptop/IMG_20210216_194714.jpg){.ui .centered .large .image}
+
+<a href="static/building-an-e-ink-laptop/IMG_20210216_194714.jpg" target="_blank" class="ui centered large image">
+  <img src="static/building-an-e-ink-laptop/IMG_20210216_194714.jpg">
+</a>
 
 
 After removing all of the screws, I was able to gain access to the panel!
 
-![](static/building-an-e-ink-laptop/IMG_20210216_203519.jpg){.ui .centered .large .image}
+<a href="static/building-an-e-ink-laptop/IMG_20210216_203519.jpg" target="_blank" class="ui centered large image">
+  <img src="static/building-an-e-ink-laptop/IMG_20210216_203519.jpg">
+</a>
 
 ## The E-ink display module and control board
 Like Zettler discovered, the Dasung HD-FT chip components upon closer inspection were also chemically peeled off to prevent reverse engineering of the e-ink display and control board.
 
-![](static/building-an-e-ink-laptop/IMG_20210216_201821.jpg){.ui .centered .large .image}
+<a href="static/building-an-e-ink-laptop/IMG_20210216_201821.jpg" target="_blank" class="ui centered large image">
+  <img src="static/building-an-e-ink-laptop/IMG_20210216_201821.jpg">
+</a>
 
 {.ui .medium .images .centered}
-![](static/building-an-e-ink-laptop/IMG_20210216_201158.jpg){.ui .centered .medium .image}
-![](static/building-an-e-ink-laptop/IMG_20210216_201211.jpg){.ui .centered .medium .image}
+<a href="static/building-an-e-ink-laptop/IMG_20210216_201158.jpg" target="_blank" class="ui centered medium image">
+  <img src="static/building-an-e-ink-laptop/IMG_20210216_201158.jpg">
+</a>
+<a href="static/building-an-e-ink-laptop/IMG_20210216_201211.jpg" target="_blank" class="ui centered medium image">
+  <img src="static/building-an-e-ink-laptop/IMG_20210216_201211.jpg">
+</a>
 
 
 ## ES133TT3 Display Module
-![](static/building-an-e-ink-laptop/IMG_20210216_201921.jpg){.ui .centered .large .image}
+<a href="static/building-an-e-ink-laptop/IMG_20210216_201921.jpg" target="_blank" class="ui centered large image">
+  <img src="static/building-an-e-ink-laptop/IMG_20210216_201921.jpg">
+</a>
 
 {.ui .small .images .centered}
-![](static/building-an-e-ink-laptop/IMG_20210216_202037.jpg){.ui .centered .large .image}
-![](static/building-an-e-ink-laptop/IMG_20210216_202009.jpg){.ui .centered .large .image}
-![](static/building-an-e-ink-laptop/IMG_20210216_202020.jpg){.ui .centered .large .image}
-![](static/building-an-e-ink-laptop/IMG_20210216_202024.jpg){.ui .centered .large .image}
+<a href="static/building-an-e-ink-laptop/IMG_20210216_202037.jpg" target="_blank" class="ui centered large image">
+  <img src="static/building-an-e-ink-laptop/IMG_20210216_202037.jpg">
+</a>
+<a href="static/building-an-e-ink-laptop/IMG_20210216_202009.jpg" target="_blank" class="ui centered large image">
+  <img src="static/building-an-e-ink-laptop/IMG_20210216_202009.jpg">
+</a>
+<a href="static/building-an-e-ink-laptop/IMG_20210216_202020.jpg" target="_blank" class="ui centered large image">
+  <img src="static/building-an-e-ink-laptop/IMG_20210216_202020.jpg">
+</a>
+<a href="static/building-an-e-ink-laptop/IMG_20210216_202024.jpg" target="_blank" class="ui centered large image">
+  <img src="static/building-an-e-ink-laptop/IMG_20210216_202024.jpg">
+</a>
 
 The e-ink display module model number for the Dasung HD-FT is the: **ES133TT3**{.center}
 
