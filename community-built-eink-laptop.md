@@ -31,6 +31,8 @@ The laptop and panels travel to different people, they can hack and play around 
 
 Follow along at [Proposal: eI-2030 - The Community Built E-Ink Laptop Project](https://forum.ei2030.org/t/proposal-ei-2030-the-community-built-e-ink-laptop-project/118/1)
 
+Check out the [slides](https://alexsoto.dev/slides) from a recent talk.
+
 {.ui .horizontal .divider .header}
 
 ## About
