@@ -5,7 +5,7 @@ date: 2021-03-08T22:43
 # Office Hours
 
 
-Are you interested in [building an e-ink laptop](https://alexsoto.dev/building-an-e-ink-laptop.html)? How about building one with a [community](https://forum.ei2030.org/t/about-ei2030-working-groups/132)?
+Are you interested in [building an e-ink laptop](https://alexsoto.dev/building-an-e-ink-laptop.html)? How about making one with a [community](https://forum.ei2030.org/t/about-ei2030-working-groups/132)?
 
 Please book a session if you would like to talk about any of the following:
 - Learning more about the EI2030 Working Groups
