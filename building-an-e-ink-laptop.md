@@ -1,7 +1,7 @@
 ---
 date: 2021-02-17T22:13
 tags:
-  - timeline
+  - blog
   - e-ink
 ---
 # Building an E-Ink Laptop

@@ -4,8 +4,8 @@ date: 2021-02-27T15:41
 
 # Alexander Soto
 
-- [[[49ce5d1a]]]
-- [[[d06dd3ba]]]
+- [[[interests]]]
+- [[[projects]]]
 - [[[talks]]]
 - [[[slides]]]
 - [[[office-hours]]]

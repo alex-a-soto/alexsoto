@@ -5,5 +5,5 @@
 , mathJaxSupport = True
 , minVersion = "0.5"
 , formats = ["markdown"]
-, plugins = ["neurondhall", "links", "tags", "uptree", "dirtree"]
+, plugins = ["neurondhall", "links", "tags", "uptree", "dirtree", "feed"]
 }

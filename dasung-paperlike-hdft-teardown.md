@@ -1,7 +1,7 @@
 ---
 date: 2021-02-20T16:02
 tags:
-  - timeline
+  - blog
   - e-ink
 ---
 
