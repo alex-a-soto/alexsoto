@@ -15,8 +15,8 @@ I enjoy tinkering/playing/breaking things, 3D printing, painting, playing piano,
 
 This site is the [scattered and unfinished version of my thoughts](https://alexsoto.dev/impulse.html) while documenting what I’m currently learning and exploring.
 
-If a post resonated positively or negatively, send me a [direct message](https://twitter.com/messages/compose?recipient_id=4648173315) on [Twitter](https://twitter.com/alexsotodev), an [email](mailto:contact@alexsoto.dev), or subscribe to the [mailing list](https://buttondown.email/alexsotodev) and we can talk. Also, ping if you’d like to know the updates of a post or if you have suggestions, comments, questions, or would like to collaborate.
+If you’d like to know the updates of a post, have questions, comments, suggestions, or would like to collaborate, send me a [direct message](https://twitter.com/messages/compose?recipient_id=4648173315) on [Twitter](https://twitter.com/alexsotodev), or an [email](mailto:contact@alexsoto.dev) and we can talk.
 
-<section id="socialMediaLinks"></section>
+<section id="subscriptionLinks"></section>
 
 [[z:zettels?tag=blog/**&timeline&cf]]

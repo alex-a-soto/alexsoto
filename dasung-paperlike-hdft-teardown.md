@@ -90,19 +90,19 @@ The e-ink display module model number for the Dasung HD-FT is the: **ES133TT3**{
 beck-elektronik[^beck-elektronik] describes it as "_reflective electrophoretic E Ink technology display module based on active matrix TFT and plastic substrate. The plastic substrate is protected by an outer covering._"
 
 Specification:
-- Size: 13.3 inch
-- Resolution (HxV): 2200 * 1650
-- Active Area: 270.60 * 202.95 mm
-- Outline Dimensions: 287.00 * 215.50 mm
-- Dpi: 206
-- E Ink Film: Carta 1.2
-- Refresh Time: 450 ms
-- Backplane: Flexible
-- Total Thickness: 0.65 mm
-- Total Weight: 68 g
-- Grey Level: 16
-- Surface Treatment: Anti-Glare
-- Partial Update: yes
+- **Size:** 13.3 inch
+- **Resolution (HxV):** 2200 * 1650
+- **Active Area:** 270.60 * 202.95 mm
+- **Outline Dimensions:** 287.00 * 215.50 mm
+- **Dpi:** 206
+- **E Ink Film:** Carta 1.2
+- **Refresh Time:** 450 ms
+- **Backplane:** Flexible
+- **Total Thickness:** 0.65 mm
+- **Total Weight:** 68 g
+- **Grey Level:** 16
+- **Surface Treatment:** Anti-Glare
+- **Partial Update:** yes
 
 Their website also lists an EPD driver kit that's compatible with it, the ES133TT3.[^driver]
 
@@ -127,7 +127,7 @@ I enjoy tinkering/playing/breaking things, 3D printing, painting, playing piano,
 
 This site is the [scattered and unfinished version of my thoughts](https://alexsoto.dev/impulse.html) while documenting what I’m currently learning and exploring.
 
-If a post resonated positively or negatively, send me a [direct message](https://twitter.com/messages/compose?recipient_id=4648173315) on [Twitter](https://twitter.com/alexsotodev), an [email](mailto:contact@alexsoto.dev), or subscribe to the [mailing list](https://buttondown.email/alexsotodev) and we can talk. Also, ping if you’d like to know the updates of a post or if you have suggestions, comments, questions, or would like to collaborate.
+If you’d like to know the updates of a post, have questions, comments, suggestions, or would like to collaborate, send me a [direct message](https://twitter.com/messages/compose?recipient_id=4648173315) on [Twitter](https://twitter.com/alexsotodev), or an [email](mailto:contact@alexsoto.dev) and we can talk.
 
 <div class="ui section divider"></div>
 
