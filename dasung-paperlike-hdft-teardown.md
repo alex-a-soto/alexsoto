@@ -18,7 +18,6 @@ This post in the series will be a teardown of the Dasung HD-FT, inspired from Ke
 </a>
 
 
-
 ## Overview of the Dasung HD-FT
 
 The Dasung HD-FT is a third-generation e-ink monitor with a display of 13.3", a screen resolution of 2200x1650, a touchscreen, and an adjustable backlight. The monitor connects via a proprietary Y cable, with connections for USB and HDMI; additionally, the Dasung HD-FT can be powered by the micro-usb connection on the left side.
