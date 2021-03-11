@@ -11,11 +11,12 @@ A series where I’m documenting my process of designing and building an eink la
 
 In my first post, [Building an E-Ink Laptop](https://alexsoto.dev/building-an-e-ink-laptop.html), I went over some history about e-ink technology, the e-ink modding community, recent advancements, and the hardware I've selected to create an e-ink laptop.
 
-This post in the series will be a teardown of the Dasung HD-FT, inspired from Kev Zettler's work on the, [Dasung Paperlike Pro Teardown](https://kevzettler.com/2018/02/11/dasung-paperlike-pro-teardown/). Thank you, [Kev Zettler](https://kevzettler.com/), for showing your work on the Dasung Paperlike Pro and making all of this possible. I will later create an accompanying video to go over the Dasung HD-FT teardown process.
+This post in the series will be a teardown of the Dasung HD-FT, inspired from Kev Zettler's work on the, [Dasung Paperlike Pro Teardown](https://kevzettler.com/2018/02/11/dasung-paperlike-pro-teardown/). Thank you, [Kev Zettler](https://kevzettler.com/), for showing your work on the Dasung Paperlike Pro and making all of this possible.
 
-<a href="static/building-an-e-ink-laptop/IMG_20210216_203519.jpg" target="_blank" class="ui centered large image">
-  <img src="static/building-an-e-ink-laptop/IMG_20210216_203519.jpg">
-</a>
+I've created an accompanying video going over the Dasung HD-FT teardown process.
+
+{.ui .medium .images .centered}
+<iframe width="560" height="315" src="https://www.youtube.com/embed/LebWtp0X0Iw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 
 ## Overview of the Dasung HD-FT
