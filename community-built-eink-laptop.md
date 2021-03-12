@@ -50,6 +50,8 @@ This site is the [scattered and unfinished version of my thoughts](https://alexs
 
 If you’d like to know the updates of a post, have questions, comments, suggestions, or would like to collaborate, send me a [direct message](https://twitter.com/messages/compose?recipient_id=4648173315) on [Twitter](https://twitter.com/alexsotodev), or an [email](mailto:contact@alexsoto.dev) and we can talk.
 
+<section id="subscriptionLinks"></section>
+
 <div class="ui section divider"></div>
 
 <section id="socialMediaLinks"></section>
