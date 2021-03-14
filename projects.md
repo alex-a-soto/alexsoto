@@ -8,3 +8,4 @@ tags:
 
 - [[building-an-e-ink-laptop]]#
 - [[community-built-eink-laptop]]#
+- [[[papertop]]]
