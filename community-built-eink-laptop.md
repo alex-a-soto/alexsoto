@@ -7,6 +7,8 @@ tags:
 
 # Community Built E-Ink Laptop
 
+- [[[papertop]]]
+
 One of the barriers to entry when working with e-ink panels of larger sizes is the price. One idea I had around this was creating the: “**The Community Built E-Ink Laptop Project**”, where community members pool resources and knowledge to build an e-ink laptop.
 
 The laptop and panels travel to different people, they can hack and play around with it for some time, and they ship it to the following community member so we can test ideas out and reduce the cost of entry to people. The process of building an E-Ink laptop will be documented in a blog, a YouTube channel, and Livestream, allowing more people to access E-ink, learn, iterate, generate interest, increase visibility and benefit everyone.
@@ -29,9 +31,9 @@ The laptop and panels travel to different people, they can hack and play around 
 
 - Create a plan or queue of community members who want to work on the computer and figure out the best way for it to travel and who it will get delivered to, and keep track of it all.
 
-Follow along at [Proposal: eI-2030 - The Community Built E-Ink Laptop Project](https://forum.ei2030.org/t/proposal-ei-2030-the-community-built-e-ink-laptop-project/118/1)
-
-Check out the [slides](https://alexsoto.dev/slides) from a recent talk.
+## Become Involved
+- [EI2030 Working Groups](https://forum.ei2030.org/c/working-groups/26)
+- Join our [Discord community](https://discord.com/invite/nnxKnxh)
 
 {.ui .horizontal .divider .header}
 
