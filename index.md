@@ -24,6 +24,8 @@ If you’d like to know the updates of a post, have questions, comments, suggest
 - [[talks]]
 - [[slides]]
 
-<section id="subscriptionLinks"></section>
-
 [[z:zettels?tag=blog/**&timeline&cf]]
+
+{.ui .horizontal .divider}
+
+<section id="subscriptionLinks"></section>
