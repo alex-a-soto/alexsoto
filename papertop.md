@@ -8,14 +8,14 @@ tags:
 
 The objective of the PaperTop is to explore creating an e-ink laptop using a Raspberry Pi 3B+, Pi-Top, and an e-ink panel. Explore what other single-board computers could be supported with the chassis. Explore what modifications to the Pi-top and what is and is not possible.
 
-<a href="static/building-an-e-ink-laptop/IMG_20210216_194558.jpg" target="_blank" class="ui centered large image">
+<a href="static/papertop/papertop.jpg" target="_blank" class="ui centered large image">
   <img src="static/papertop/papertop.jpg">
 </a>
 
 
 The first pi-top started as part of an IndieGoGo campaign in 2014.[^indiegogo] Since then, there have been different iterations of the pi-top. The v1 to v3 of the pi-top is of particular interest since they share a similar design. The pi-top we are using, v2, is available on eBay for about $50-80 dollars; the one shown here was purchased for $30.
 
-<a href="static/building-an-e-ink-laptop/IMG_20210216_194558.jpg" target="_blank" class="ui centered large image">
+<a href="static/papertop/pitop-v1.jpg" target="_blank" class="ui centered large image">
   <img src="static/papertop/pitop-v1.jpg">
 </a>
 
@@ -24,7 +24,7 @@ The first pi-top started as part of an IndieGoGo campaign in 2014.[^indiegogo] S
 
 ### Keyboard and Touchpad
 
-<a href="static/building-an-e-ink-laptop/IMG_20210216_194558.jpg" target="_blank" class="ui centered large image">
+<a href="static/papertop/pitop-keyboard.jpg" target="_blank" class="ui centered large image">
   <img src="static/papertop/pitop-keyboard.jpg">
 </a>
 
@@ -35,16 +35,16 @@ The keyboard and touchpad, rather than having a proprietary connector, uses a US
 
 ### Mods
 
-<a href="static/building-an-e-ink-laptop/IMG_20210216_194558.jpg" target="_blank" class="ui centered large image">
+<a href="static/papertop/pitop-back.jpg" target="_blank" class="ui centered large image">
   <img src="static/papertop/pitop-back.jpg">
 </a>
 
 
-<a href="static/building-an-e-ink-laptop/IMG_20210216_194558.jpg" target="_blank" class="ui centered large image">
+<a href="static/papertop/pitop-side.png" target="_blank" class="ui centered large image">
   <img src="static/papertop/pitop-side.png">
 </a>
 
-<a href="static/building-an-e-ink-laptop/IMG_20210216_194558.jpg" target="_blank" class="ui centered large image">
+<a href="static/papertop/pitop-lid.jpg" target="_blank" class="ui centered large image">
   <img src="static/papertop/pitop-lid.jpg">
 </a>
 
@@ -65,7 +65,7 @@ We can re-use the lid's hinges and re-create the lid so that an eink panel could
 
 The combination of having a keyboard and mouse with a USB interface, the space and easy access to the internals, the price and availability online, and the possible modifications make the pi-top an appealing starting point for future projects to build an e-ink laptop.
 
-<a href="static/building-an-e-ink-laptop/IMG_20210216_194558.jpg" target="_blank" class="ui centered large image">
+<a href="static/papertop/pitop-dasung.jpg" target="_blank" class="ui centered large image">
   <img src="static/papertop/pitop-dasung.jpg">
 </a>
 
