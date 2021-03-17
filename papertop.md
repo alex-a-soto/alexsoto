@@ -6,6 +6,8 @@ tags:
 
 # PaperTop
 
+[[[teardown-of-the-papertop]]]
+
 The objective of the PaperTop is to explore creating an e-ink laptop using a Raspberry Pi 3B+, Pi-Top, and an e-ink panel. Explore what other single-board computers could be supported with the chassis. Explore what modifications to the Pi-top and what is and is not possible.
 
 <a href="static/papertop/papertop.jpg" target="_blank" class="ui centered large image">
