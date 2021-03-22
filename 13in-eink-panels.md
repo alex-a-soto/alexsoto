@@ -1,20 +1,21 @@
 ---
-date: 2021-03-20T19:11
+date: 2021-03-21T21:14
 tags:
   - blog
-  - e-ink
 ---
 
-# Electrophoretic display patents
+# 13.3in E-ink Panels
 
-- [Microencapsulated Electrophoretic Display](https://patents.google.com/patent/US5961804A/en?oq=US5961804)
-- [Colored Electrophoretic Displays](https://patents.google.com/patent/US10509293B2/en?oq=US10509293)
-- [Driving Method for Electrophoretic Displays](https://patents.google.com/patent/US9013394B2/en?oq=US9013394)
-- [Method of driving a colored electrophoretic display ](https://patents.google.com/patent/EP2997419B1/en?q=~patent%2fUS20170168370A1)
-- [Electro-optic displays with reduced remnant voltage](https://patents.google.com/patent/US9881564B2/en?q=~patent%2fUS20170168370A1)
-- [Methods for driving electrophoretic displays using dielectrophoretic forces](https://patents.google.com/patent/US20170168370A1/en?q=~patent%2fUS20170168370A1)
-- [Particles for use in electrophoretic displays](https://patents.google.com/patent/US8199395B2/en?q=~patent%2fUS20170168370A1&page=1)
-- [Display device and method of manufacture thereof ](https://patents.google.com/patent/US8730278B2/en?q=~patent%2fUS20170168370A1&page=4)
+I did some research about eink panels in the 13inch range that would be suitable for a laptop. According to panelook.com[^panel], there are 9 e-ink panels, 7 of which are discontinued and only 2 in production.
+
+The two in production are the ED133UT2 and ES133TT3[^ES133T3]. This number doesn't account for new e-ink panels that use color eink.
+
+These constraints narrow the pool of e-ink panels that would be suitable for an e-ink laptop, although I would be interested in finding which e-ink panel is used in the Waveshare 13.3 or 12.48inch devices.
+
+It seems the next step would be to identify the components used in the ES133T3 and creating a driver that would be compatible with it and also a similar future panel. The ES133T3 was released in 2016, and I'm not sure how it's decided when an eink panel is no longer in production, so that's something to take into consideration.
+
+[^panel]: [13inch eink panels](https://www.panelook.com/sizmodlist.php?st=&pl=&so_attr=&sizes[]=1330&brand_family=39)
+[^ES133T3]: [ES133TT3](https://www.panelook.com/ES133TT3_E%20Ink_13.3_EPD_overview_31869.html)
 
 {.ui .horizontal .divider .header}
 
