@@ -6,4 +6,5 @@ tags:
 
 # Slides
 
-- Introduction of the EI2030 E-Ink Laptop Project: [PDF](static/community-built-eink-laptop-project/slides.pdf) | [HTML](static/community-built-eink-laptop-project/slides.html)
+- Introduction of the EI2030 E-Ink Laptop Project: [PDF](static/slides/community-built-eink-laptop-project/slides.pdf) | [HTML](static/slides/community-built-eink-laptop-project/slides.html)
+- 2021-03-26 Pi-Top Sessions: EI2030 PaperTop [PDF](static/slides/pi-top/03-26-21/slides.pdf) | [HTML](static/slides/pi-top/03-26-21/slides.html)
