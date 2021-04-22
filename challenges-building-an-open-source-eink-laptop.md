@@ -7,6 +7,8 @@ tags:
 
 # Challenges Building an Open-Source E Ink Laptop
 
+![](static/challenges-building-an-eink-laptop/olimex.jpg){.ui .right .floated .small .image}
+
 In a previous article, I discussed my intention of [[building-an-e-ink-laptop]]. In this article, I want to introduce [EI2030](https://discord.com/invite/nnxKnxh) and how we are building an open-source eink laptop and its challenges.
 
 This article wouldn't be possible without the following contributors:
