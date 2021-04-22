@@ -3,7 +3,6 @@ date: 2021-04-22T12:00
 tags:
   - blog
   - e-ink
-unlisted: true
 ---
 
 # Challenges Building an Open-Source E Ink Laptop
@@ -83,6 +82,18 @@ The Drivers for E-Ink display's objective in the near term is to explore the dif
 
 The objective of the group is to research, design, and create/remix a laptop chassis that can be the foundation for building an eink laptop and for current/future working groups. Preference will be for designs used with open-source software to enable the use of open-hardware—for example, Olimex TERES-I[^diy-laptop], VIA OpenBook[^openbook], MNT Reform[^mnt-reform], and EOMA68[^eoma68].
 
+- Non-Emissive Displays
+{.ui .medium .images .centered}
+<a href="static/challenges-building-an-eink-laptop/es133tt3.png" target="_blank" class="ui large centered image">
+  <img src="static/challenges-building-an-eink-laptop/es133tt3.png">
+</a>
+<a href="static/challenges-building-an-eink-laptop/gd.jpg" target="_blank" class="ui large centered image">
+  <img src="static/challenges-building-an-eink-laptop/gd.jpg">
+</a>
+<br>
+
+The objective of this working group is to discuss non-emissive displays, mainly focusing on e-ink, RLCD, DES, and alternatives. The group will concentrate on creating prototypes and learning more about display physics. Research on non-emissive displays' developments will be distilled and shared for current/future working groups.
+
 - [Psychology and UX of e-ink](https://forum.ei2030.org/t/working-group-definition-psychology-and-ux-of-e-ink/163/)
 
 {.ui .medium .images .centered}
@@ -118,7 +129,7 @@ We can use the panels present on existing eink devices, second-hand markets, who
 
 Given the challenges stated above, another option is not to use E Ink but rather a different non-emissive display technology such as Display Electronic Slurry (DES)[^des] or Reflective Liquid Crystal Display (RLCD)[^rlcd].
 
-DES is used in the displays offered by Good Display. Some of the notable features of using a DES display are an improved: pixel structure, contrast, resolution, operating temperature, power consumption, and cost. Additionally, an MOQ is not required.
+DES is used in the displays offered by Good Display. Some of the notable features of using a DES display are an improved: pixel structure, contrast, resolution, operating temperature, power consumption, and cost. Additionally, an MOQ is not required. We are waiting for Good Display to have DES displays in stock to purchase a display and conduct tests and compare these results to e-ink, RLCD, etc.
 
 RLCDs[^rlcd2] are an alternative reflective display technology that is attractive as they are cheaper than eink, don't require unique waveforms/firmware/controllers, have week-long battery life, and most excitingly, can do 60fps! Sharp from Japan is the leading maker of RLCDs today, BOE as well. RLCDs are the displays that are in your microwave, oven, & TI calculator. But they also were the displays in your Gameboy & Pebble Watch[^pebble]. And if you have a Garmin smartwatch today, it likely has an RLCD with a backlight - 'a transflective RLCD'.
 
