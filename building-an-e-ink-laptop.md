@@ -10,6 +10,7 @@ tags:
 
 A series where I'm documenting my process of designing and building an e-ink laptop.
 - [[[dasung-paperlike-hdft-teardown]]]
+- [[[challenges-building-an-open-source-eink-laptop]]]
 
 
 ## Background
