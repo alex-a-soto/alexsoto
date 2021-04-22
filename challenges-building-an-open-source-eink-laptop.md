@@ -210,6 +210,8 @@ Our team is looking for folks with experience in:
 We are open to everyone joining, regardless of your skillset, and I believe we all have something to contribute to the community we are building and shaping together.
 
 
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Let&#39;s build an open-source eink laptop together. 💻<a href="https://t.co/YGZ3FzG898">https://t.co/YGZ3FzG898</a><br><br>🤔Interested? Come join us!🎉<a href="https://twitter.com/hashtag/ei2030?src=hash&amp;ref_src=twsrc%5Etfw">#ei2030</a> <a href="https://twitter.com/hashtag/eink?src=hash&amp;ref_src=twsrc%5Etfw">#eink</a> <a href="https://twitter.com/hashtag/einklaptop?src=hash&amp;ref_src=twsrc%5Etfw">#einklaptop</a> <a href="https://twitter.com/hashtag/openhardware?src=hash&amp;ref_src=twsrc%5Etfw">#openhardware</a> <a href="https://twitter.com/hashtag/opensource?src=hash&amp;ref_src=twsrc%5Etfw">#opensource</a> <a href="https://twitter.com/hashtag/kicad?src=hash&amp;ref_src=twsrc%5Etfw">#kicad</a> <a href="https://twitter.com/hashtag/freecad?src=hash&amp;ref_src=twsrc%5Etfw">#freecad</a> <a href="https://twitter.com/hashtag/showyourwork?src=hash&amp;ref_src=twsrc%5Etfw">#showyourwork</a> <a href="https://twitter.com/hashtag/buildinpublic?src=hash&amp;ref_src=twsrc%5Etfw">#buildinpublic</a></p>&mdash; Alexander Soto (@alexsotodev) <a href="https://twitter.com/alexsotodev/status/1385200873563951106?ref_src=twsrc%5Etfw">April 22, 2021</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
 ## About
 ![](static/profile.jpeg){#avatar .ui .left .floated .small .image}
 
