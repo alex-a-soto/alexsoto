@@ -9,7 +9,7 @@ tags:
 
 ![](static/challenges-building-an-eink-laptop/olimex.jpg){.ui .right .floated .small .image}
 
-In a previous article, I discussed my intention of [[building-an-e-ink-laptop]]. In this article, I want to introduce [EI2030](https://discord.com/invite/nnxKnxh) and how we are building an open-source eink laptop and its challenges.
+In a previous article, I discussed my intention of [[building-an-e-ink-laptop]]. In this article, I want to introduce [EI2030](https://ei2030.zulipchat.com/register/) and how we are building an open-source eink laptop and its challenges.
 
 This article wouldn't be possible without the following contributors:
 - [@initrd](https://twitter.com/_initrd)
@@ -199,7 +199,7 @@ Our next steps to create a prototype of an open-source eink laptop are:
 
 ## An Invitation
 If any of the work we are doing piqued your interest, we invite you to join our:
-- [Discord](https://discord.com/invite/nnxKnxh)
+- [Zulip](https://ei2030.zulipchat.com/register/)
 - [Forum](https://forum.ei2030.org/categories)
 - [Book time](https://alexsoto.dev/office-hours.html) during my office hours to talk further.
 
