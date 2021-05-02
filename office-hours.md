@@ -7,7 +7,7 @@ tags:
 # Office Hours
 
 
-Are you interested in [building an open-source e-ink laptop](https://alexsoto.dev/building-an-e-ink-laptop.html)? How about making one with a [community](https://forum.ei2030.org/t/about-ei2030-working-groups/132)?
+Are you interested in [building an open-source e-ink laptop](https://alexsoto.dev/challenges-building-an-open-source-eink-laptop.html)? How about making one with a [community](https://forum.ei2030.org/t/about-ei2030-working-groups/132)?
 
 Please book a session if you would like to talk about any of the following:
 - Learning more about the EI2030 Working Groups
@@ -16,6 +16,8 @@ Please book a session if you would like to talk about any of the following:
 - E-Ink or related technologies.
 
 These office hours are my attempt to generate interest about building an e-ink laptop and connecting people together.
+
+Join our community on [Zulip](https://ei2030.zulipchat.com/register/) to learn more.
 
 Currently, accepting invitations at meetups, talks, conferences, etc.
 
