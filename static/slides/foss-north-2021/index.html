@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+	<html class="sl-root decks export offline loaded">
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<title>foss-north 2021: Building an Open-Source Eink Laptop</title>
+
+
+		<link rel="stylesheet" type="text/css" href="lib/offline-v2.css">
+
+
+
+	</head>
+	<body class="reveal-viewport theme-font-montserrat theme-color-sand-blue">
+		<div class="reveal">
+			<div class="slides">
+				<section data-id="65f8e80ef3efe4da91df4cb0ce717c1c" data-auto-animate="" data-background-color="#ffffff" data-auto-animate-unmatched="false"><div class="sl-block" data-block-type="text" style="width: 867.4px; left: 46.3px; top: 259.879px; height: auto;" data-block-id="56cb58826a15087e73324c6de2177280" data-name="text-cdf209"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10;">
+<h1><span style="font-size:0.9em">Building an Open-Source E-ink Laptop</span></h1>
+</div></div>
+<div class="sl-block" data-block-type="image" style="width: 806.4px; height: 189.879px; left: 90px; top: 70px; min-width: 1px; min-height: 1px;" data-name="image-a0373e" data-block-id="19c901b65b8ff6e1a4f028aa38d152c6"><div class="sl-block-content" style="z-index: 11;"><img style="" data-natural-width="344" data-natural-height="81" data-lazy-loaded="" data-src="33e371f9428f9c2742c8e921cd5267ae.png"></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 600px; left: 179px; top: 489.439px;" data-name="text-bac770" data-block-id="0f128f0d018cc07126650934931490d6"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12;">
+<p><strong>Tuesday, 1st June 2021, at 14:00 UTC+2</strong></p>
+</div></div></section><section data-id="4c2f29c44de311f9892be2ee44b7cf0f" data-background-color="#eeeeee" data-auto-animate="" data-auto-animate-unmatched="false">
+
+
+<div class="sl-block" data-block-type="text" style="height: auto; width: 204px; left: 240px; top: 404px;" data-name="text-8cd33d" data-block-id="021b0f29854b31336a68fd16877a1997"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 13;">
+<p><a href="https://twitter.com/alexsotodev" target="_blank">@alexsotodev </a></p>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 283px; left: 651.5px; top: 400.5px;" data-block-id="b13c9619f285e58bda0f7e234fc54792" data-name="text-f5e42f"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 14;">
+<p><a href="https://alexsoto.dev/slides" target="_blank">alexsoto.dev/slides</a></p>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 320px; left: 240px; top: 464px;" data-block-id="fe3fd696a8909ef0851281745aee3538" data-name="text-5841d8"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 15;">
+<p><a href="mailto:contact@alexsoto.dev" target="_blank">contact@alexsoto.dev</a></p>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 708px; left: 252px; top: 97px;" data-name="text-98c0b3" data-block-id="1884cb7a6083451757531e73848a538a">
+<div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 16;" dir="ui">
+<p style="text-align: left;"><span style="font-size:0.9em">I’m a community organizer, educator and software engineer.</span></p>
+
+<p style="text-align: left;"><span style="font-size:0.9em">My interests are in exploring community-building, social justice, education, and leveraging technology to address social problems.</span></p>
+
+<p style="text-align: left;"><span style="font-size:0.9em">I’m currently an Expert In Residence at <a href="https://www.resilientcoders.org/" target="_blank">Resilient Coders</a> and I'm the project lead at EI2030.</span></p>
+</div>
+<grammarly-extension data-grammarly-shadow-root="true" style="position: absolute; top: 0px; left: 0px; pointer-events: none; z-index: 16;" class="cGcvT"></grammarly-extension>
+</div>
+<div class="sl-block sl-block-group" data-block-type="group" data-name="group-98f903" data-block-id="02b56615c2397d9edd883e9961f3e910" style="width: auto; height: auto;"><div class="sl-block-content sl-block-group-content" style="transform-origin: 109px 270px 0px; z-index: 10;">
+<div class="sl-block" data-block-type="image" style="width: 218px; height: 218px; left: 0px; top: 97px; min-width: 1px; min-height: 1px;" data-name="image-c0e89e" data-block-id="32475abd96abe98273b1e71b6965b247"><div class="sl-block-content" style="z-index: 11;"><img style="" data-natural-width="400" data-natural-height="400" data-lazy-loaded="" data-src="fadc0170d5425f79b5124f3cbfa07660.png"></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 212px; left: 6px; top: 323px;" data-name="text-c42bb6" data-block-id="ae963ff9e572904e4678da697fc9b4a7"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12; font-size: 70%;">
+<p><span style="font-size:0.9em">Alexander Soto (he/him/his)</span></p>
+
+<p><span style="font-size:0.9em">Project Lead</span></p>
+
+<p><span style="font-size:0.9em">@EI2030</span></p>
+</div></div>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 305px; left: 640.5px; top: 464px;" data-block-id="9bd4ddd9ae34e67f1f06700ba3aafefc" data-name="text-744425"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 17;">
+<p><a href="https://ei2030.zulipchat.com/" target="_blank">ei2030.zulipchat.com</a></p>
+</div></div></section><section data-id="b20d899b15ad0b4bbb139b646c0c764e" data-background-color="#ffffff"><div class="sl-block" data-block-type="image" style="width: 709.77px; height: 167.126px; left: 128.115px; top: 140px; min-width: 1px; min-height: 1px;" data-name="image-a0373e" data-block-id="d6cd8adfd3841eda3f706192153c7e67"><div class="sl-block-content" style="z-index: 10;"><img style="" data-natural-width="344" data-natural-height="81" data-lazy-loaded="" data-src="33e371f9428f9c2742c8e921cd5267ae.png"></div></div>
+<div class="sl-block" data-block-type="text" style="width: 806px; left: 80px; top: 350px; height: auto;" data-name="text-cdf209" data-block-id="736aeb01d68f37e359b27e6704810bae">
+<div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 11;" dir="ui">
+<p><span style="font-size:0.9em">The goal of EI2030 is to promote healthier computing practices, connecting people who are interested in <strong>learning</strong>, <strong>discussion</strong>, and facilitating the exchange of <strong>ideas</strong> and <strong>collaboration</strong>.</span></p>
+</div>
+<grammarly-extension data-grammarly-shadow-root="true" style="position: absolute; top: 0px; left: 0px; pointer-events: none; z-index: 11;" class="cGcvT"></grammarly-extension>
+</div></section><section data-id="cbf5857a3e182d3bb304c1dcceba72d7" data-background-color="#ffffff"><div class="sl-block" data-block-type="image" style="width: 560.191px; height: 131.905px; left: 218.566px; top: -7.964px; min-width: 1px; min-height: 1px;" data-name="image-a0373e" data-block-id="6676ce8eb81ed1797d17f293d472fd70"><div class="sl-block-style" style="z-index: 10; transform: rotate(0deg);"><div class="sl-block-content" style="z-index: 10;"><img style="" data-natural-width="344" data-natural-height="81" data-lazy-loaded="" data-src="33e371f9428f9c2742c8e921cd5267ae.png"></div></div></div>
+<div class="sl-block sl-block-group" data-block-type="group" data-name="group-ff79b4" data-block-id="7bd3ee9b7358ab147d1b6828c496fdb4" style="width: auto; height: auto;"><div class="sl-block-content sl-block-group-content" style="transform-origin: 800.001px 417.86px 0px; z-index: 11;">
+<div class="sl-block" data-block-type="image" style="width: 164.235px; height: 147.874px; left: 717.883px; top: 324.415px; min-width: 1px; min-height: 1px;" data-name="image-1ec194" data-block-id="84fef4922ceb1e50598d39d93905dafb"><div class="sl-block-content" style="z-index: 12;"><img style="" data-natural-width="522" data-natural-height="470" data-lazy-loaded="" data-src="40748b71673d1fd70ac76c9ea37cc8c2.gif"></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 88px; left: 756.001px; top: 472.304px;" data-name="text-b25b69" data-block-id="15debdcf50cb40790f741b826c26f2a5"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 13;">
+<p><span style="font-size:0.7em">Manuel</span></p>
+</div></div>
+</div></div>
+<div class="sl-block sl-block-group" data-block-type="group" data-name="group-6ad51c" data-block-id="c396f34d3ea32bc2393b62c945829e34" style="width: auto; height: auto;"><div class="sl-block-content sl-block-group-content" style="transform-origin: 130.49px 217.911px 0px; z-index: 14;">
+<div class="sl-block" data-block-type="image" style="width: 214.026px; height: 143.495px; left: 23.4765px; top: 130.907px; min-width: 1px; min-height: 1px;" data-name="image-de0426" data-block-id="ba27419b814ec8e386bb34b6491a5a79"><div class="sl-block-content" style="z-index: 15;"><img style="" data-natural-width="528" data-natural-height="354" data-lazy-loaded="" data-src="0bc896311847fea5d39c31c95df83294.gif"></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 103px; left: 78.9895px; top: 265.915px;" data-block-id="d087ec4aa68113932806b81198ec7f02" data-name="text-0cea40"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 16;">
+<p><span style="font-size:0.7em">Wenting</span></p>
+</div></div>
+</div></div>
+<div class="sl-block sl-block-group" data-block-type="group" data-name="group-095255" data-block-id="9801d25f58b826bbf24582ddd94d8291" style="width: auto; height: auto;"><div class="sl-block-content sl-block-group-content" style="transform-origin: 800.001px 227.661px 0px; z-index: 17;">
+<div class="sl-block" data-block-type="image" style="width: 232.411px; height: 155.821px; left: 683.795px; top: 130.907px; min-width: 1px; min-height: 1px;" data-name="image-9ce5cc" data-block-id="b9e0e3cdb695aefb27f50951b2b8419b"><div class="sl-block-content" style="z-index: 18;"><img style="" data-natural-width="528" data-natural-height="354" data-lazy-loaded="" data-src="3951c8678f5b26d62166f7d0f132819a.gif"></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 103px; left: 742.879px; top: 285.415px;" data-block-id="0dd876c4c9162a9f4699a22322bf533c" data-name="text-6b5467"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 19;">
+<p><span style="font-size:0.7em">Tom</span></p>
+</div></div>
+</div></div>
+<div class="sl-block sl-block-group" data-block-type="group" data-name="group-53f635" data-block-id="496e240e0d282e5e0d35f1ea1cdb92b6" style="width: auto; height: auto;"><div class="sl-block-content sl-block-group-content" style="transform-origin: 458.68px 602.31px 0px; z-index: 20;">
+<div class="sl-block" data-block-type="image" style="width: 249.917px; height: 156.365px; left: 333.721px; top: 504.62px; min-width: 1px; min-height: 1px;" data-name="image-3135ec" data-block-id="dd4ddaa5ec9cca10f638ef7010e8fdc9"><div class="sl-block-content" style="z-index: 21;"><img style="" data-natural-width="561" data-natural-height="351" data-lazy-loaded="" data-src="afd67fd3b2ef7fc3a251fb7254f9abd4.gif"></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 103px; left: 407.181px; top: 661px;" data-block-id="f1685a7211e86fe057b4b190c9329fe5" data-name="text-3a3185"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 22;">
+<p><span style="font-size:0.7em">Giovanni</span></p>
+</div></div>
+</div></div>
+<div class="sl-block sl-block-group" data-block-type="group" data-name="group-b80370" data-block-id="1926db90fab9b0a454d5b83477482fa9" style="width: auto; height: auto;"><div class="sl-block-content sl-block-group-content" style="transform-origin: 130.49px 430.415px 0px; z-index: 23;">
+<div class="sl-block" data-block-type="image" style="width: 169.976px; height: 167px; left: 45.5015px; top: 324.415px; min-width: 1px; min-height: 1px;" data-name="image-96a6e4" data-block-id="3717f1324c48feb04f0975161a99449b"><div class="sl-block-content" style="z-index: 24;"><img style="" data-natural-width="514" data-natural-height="505" data-lazy-loaded="" data-src="a6bfc2f76215607e34697ecbc2ca3b97.gif"></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 103px; left: 66.9915px; top: 497.415px;" data-block-id="524ab0fcf9919f129d3854b3d3b5fd68" data-name="text-4a1a86"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 25;">
+<p><span style="font-size:0.7em">Anjan</span></p>
+</div></div>
+</div></div>
+<div class="sl-block sl-block-group" data-block-type="group" data-name="group-c87a49" data-block-id="9915fc4a1d69b4a30d01de1907c0153b" style="width: auto; height: auto;"><div class="sl-block-content sl-block-group-content" style="transform-origin: 458.68px 411.515px 0px; z-index: 26;">
+<div class="sl-block" data-block-type="image" style="width: 205.673px; height: 141.5px; left: 355.843px; top: 324.415px; min-width: 1px; min-height: 1px;" data-name="image-08ab33" data-block-id="bedf524e5a3ae66bb22f179ca158cc02"><div class="sl-block-content" style="z-index: 27;"><img style="" data-natural-width="516" data-natural-height="355" data-lazy-loaded="" data-src="bd9ac6bbf7d27af6c6d9067f4d938601.gif"></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 103px; left: 401.516px; top: 459.614px;" data-block-id="c7a81b128e1a46ccc8cc2ef2e4326d7f" data-name="text-b70c86"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 28;">
+<p><span style="font-size:0.7em">Matt</span></p>
+</div></div>
+</div></div>
+
+
+
+<div class="sl-block" data-block-type="image" style="width: 236.055px; height: 152.63px; left: 355.843px; top: 132.785px; min-width: 1px; min-height: 1px;" data-name="image-6c57c3" data-block-id="6db19a20cfc42e137e783986f95d02c0"><div class="sl-block-content" style="z-index: 29;"><img style="" data-natural-width="498" data-natural-height="322" data-lazy-loaded="" data-src="1f0aefe7beba3fe1555550b4230a1686.gif"></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 103px; left: 428.5px; top: 274.402px;" data-block-id="d7a9fcafa3bca41738ffb9e8323ea3f3" data-name="text-36c855"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 30;">
+<p><span style="font-size:0.7em">Brodie</span></p>
+</div></div></section><section data-id="333ad2e6b03e02244eac3314b0994835" data-background-color="#eeeeee"><div class="sl-block" data-block-type="text" style="height: auto; width: 952px; left: 4px; top: 248px;" data-name="text-ddd6a7" data-block-id="e49db3dbcc999ea142e69366640835e9"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 10;">
+<ul>
+	<li>
+	<p><span style="font-size:1.0em">Build a proof of concept of an <strong>open-source</strong> and <strong>open-hardware</strong> e-ink laptop.</span></p>
+	</li>
+	<li>
+	<p><span style="font-size:1.0em">Pool our resources, knowledge, and expertise in working groups.</span></p>
+	</li>
+</ul>
+</div></div>
+<div class="sl-block" data-block-type="text" style="width: 867.4px; left: 32.3px; top: 70px; height: auto;" data-name="text-cdf209" data-block-id="d4ef0152e5b86afda33dc36100056280"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 11;">
+<h2>
+<span style="font-size:1.0em">Community Built E-Ink Laptop Project </span>💻</h2>
+</div></div>
+<div class="sl-block" data-block-type="image" style="width: 299.784px; height: 122.49px; left: 73px; top: 428.755px; min-width: 1px; min-height: 1px;" data-name="image-e942c7" data-block-id="f900e171f2acf7dd1969886cbc71bd4b"><div class="sl-block-content" style="z-index: 12;"><img style="" data-natural-width="1280" data-natural-height="523" data-lazy-loaded="" data-src="ad5f7d16bd8ebb15aa1879580e851d55.png"></div></div>
+<div class="sl-block" data-block-type="image" style="width: 459.556px; height: 188px; left: 482px; top: 396px; min-width: 1px; min-height: 1px;" data-name="image-c7fbf3" data-block-id="dd8280b861d98d28bcb63b952bea12bc"><div class="sl-block-content" style="z-index: 13;"><img style="" data-natural-width="440" data-natural-height="180" data-lazy-loaded="" data-src="c59d8b782c014891d4860b3f28f7d614.png"></div></div></section><section data-id="166c038cfa79729accb73f2b3e8e2cf9" data-background-color="#eeeeee">
+<div class="sl-block" data-block-type="text" style="height: auto; width: 813px; left: 73.5px; top: 182.5px;" data-name="text-0ff213" data-block-id="5b2da23929112c85d567dbaeb1931031"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 10;">
+<ul>
+	<li>A working group focuses on a <strong>specific objective.</strong>
+</li>
+	<li>
+<strong>Timeboxed</strong>.</li>
+	<li>Documents their <strong>process</strong>.</li>
+	<li>Shares <strong>resources</strong> and <strong>knowledge</strong>.</li>
+</ul>
+</div></div>
+<div class="sl-block" data-block-type="text" style="width: 867.4px; left: 46.3px; top: 70px; height: auto;" data-name="text-cdf209" data-block-id="5385ed3e84ea4cedbdfe29394513e06e"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 11;">
+<h2><span style="font-size:1.0em">Structure</span></h2>
+</div></div>
+<div class="sl-block" data-block-type="image" style="width: 324.656px; height: 93.0003px; left: 0px; top: 463.371px; min-width: 1px; min-height: 1px;" data-name="image-5bbbbf" data-block-id="631962cd97f136e4d02efdb05367f53d"><div class="sl-block-content" style="z-index: 12;"><img style="" data-natural-width="1920" data-natural-height="550" data-lazy-loaded="" data-src="030487413982799eae7f6d3d416e0627.png"></div></div>
+<div class="sl-block" data-block-type="image" style="width: 199.023px; height: 179.743px; left: 380.489px; top: 420px; min-width: 1px; min-height: 1px;" data-name="image-8cc3ae" data-block-id="aef73f63a96fc25a48bd4c8e899980ff"><div class="sl-block-content" style="z-index: 13;"><img style="" data-natural-width="1280" data-natural-height="1156" data-lazy-loaded="" data-src="6f66951c8b8b193a9b48f91eed2a6cf7.png"></div></div>
+<div class="sl-block" data-block-type="image" style="width: 210.879px; height: 210.879px; left: 702.821px; top: 419.121px; min-width: 1px; min-height: 1px;" data-name="image-bf9275" data-block-id="3c66fca4c0e7aa2149314aa5a44c6f79"><div class="sl-block-content" style="z-index: 14;"><img style="" data-natural-width="300" data-natural-height="300" data-lazy-loaded="" data-src="11bb8dbce06a7647a6b3cf7aaf5847f8.png"></div></div></section><section data-id="9de484958eba467f4d048433729d0cdb" data-background-color="#eeeeee"><div class="sl-block" data-block-type="text" style="width: 867.4px; left: 63.8px; top: 70px; height: auto;" data-name="text-cdf209" data-block-id="ad7019c200560617054802620b9d190a"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10;">
+<h2>
+<span style="font-size:1.0em">Working Groups </span>🛠️</h2>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 421px; left: 29.5px; top: 202px;" data-name="text-0ff213" data-block-id="14109dd84de7bfc73f03f548b8bd93f5"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11;">
+<ul>
+	<li>Drivers for E-ink Displays</li>
+	<li>Laptop Chassis</li>
+	<li>Non-emissive Displays</li>
+	<li>Psychology &amp; UX</li>
+</ul>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 310px; left: 570px; top: 210px;" data-name="text-e6ad80" data-block-id="c5ab0ce6b0de8c9de376a29e7825fac2"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12;">
+<ul>
+	<li>Low Power MCU's</li>
+	<li>PaperTerm</li>
+</ul>
+</div></div></section><section data-id="971868e0b80ad3abeb638f7468cb912d"><div class="sl-block" data-block-type="text" style="width: 806px; left: 77px; top: 266px; height: auto;" data-block-id="5bca99af666c48089dc77d7a9e1e7e41"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10;">
+<h1>Meet Archer 👋</h1>
+</div></div></section><section data-id="17529676715e143a4a8530d6ee4569f9" data-background-color="rgb(124,124,117)" data-background-image="31f90822a60ce4886e336becd7b1536d.jpg" data-background-size="contain"></section><section data-id="c055372b5411eda8bc750c6092e9b067" data-background-color="#eeeeee"><div class="sl-block" data-block-type="text" style="width: 869px; left: 45.5px; top: 210px; height: auto;" data-block-id="b428f5294d65ec8a8450ea0dd9377e35"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10;">
+<h1>Challenges Building an E-Ink Laptop 🎯</h1>
+</div></div></section><section data-id="f30a98dc6cf2daf46383f3bb9dd8bbcd" data-background-color="#eeeeee"><div class="sl-block" data-block-type="text" style="width: 867.4px; left: 63.8px; top: 70px; height: auto;" data-name="text-cdf209" data-block-id="fe455d2e53c53fa5bb46888b369a8871"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10;">
+<h2>#1 Driving an E-Ink Display</h2>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 806px; left: 80px; top: 171px;" data-name="text-0ff213" data-block-id="da2dca504934b1184595e926f591578c"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11;">
+<ul>
+	<li style="text-align:left">
+<span style="font-size:1.0em">Proprietary </span>electrophoretic <span style="font-size:1.0em">display controller (EPDC).</span>
+</li>
+	<li style="text-align:left"><span style="font-size:1.0em">Proprietary vendor waveforms.</span></li>
+</ul>
+</div></div>
+<div class="sl-block" data-block-type="image" style="width: 478.869px; height: 284.782px; left: 452.331px; top: 310px; min-width: 1px; min-height: 1px;" data-name="image-8e6b08" data-block-id="20412203a423fe697651b44fbcde0353"><div class="sl-block-content" style="z-index: 12;"><img style="" data-natural-width="528" data-natural-height="314" data-lazy-loaded="" data-src="57ecd632038949af46ee4d2a94cfd866.png"></div></div>
+<div class="sl-block" data-block-type="image" style="width: 426.667px; height: 320px; left: 0px; top: 310px; min-width: 1px; min-height: 1px;" data-name="image-b0bff8" data-block-id="55f802bf5831c64b09f92e87bf9e6250"><div class="sl-block-content" style="z-index: 13;"><img style="" data-natural-width="1800" data-natural-height="1350" data-lazy-loaded="" data-src="1ee1395572826684a76302f36d926440.png"></div></div></section><section data-id="51e51ade403fced9a9d88678136eb1f2" data-background-color="#eeeeee"><div class="sl-block" data-block-type="text" style="width: 961.4px; left: -1.4px; top: 66px; height: auto;" data-name="text-cdf209" data-block-id="872170c647e0fad5f2efd97edb635482"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10;">
+<h2>Progress: #Driving E-Ink Displays</h2>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 919px; left: 30px; top: 173px;" data-name="text-145901" data-block-id="1c0d344fd50b6dbd8634f0d897f7d15e">
+<div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11;" dir="ui">
+<p style="text-align:left"><span style="font-size:1.0em">To build our <strong>open-hardware</strong> and <strong>open-source</strong> e-ink laptop we are creating:</span></p>
+
+<ul>
+	<li style="text-align:left"><span style="font-size:1.0em"><strong>Open-hardware</strong> electrophoretic display controller to drive e-ink panels.</span></li>
+	<li style="text-align:left"><span style="font-size:1.0em"><strong>Open-source</strong> waveforms for different e-ink panels.</span></li>
+	<li style="text-align:left"><span style="font-size:1.0em">Design files available on our <strong>EI2030 Github account.</strong></span></li>
+</ul>
+
+<p style="text-align:left"><br>
+In time, we hope to create a database of open-source waveforms compatible with a range of eink displays to be used in different projects and devices.</p>
+</div>
+<grammarly-extension data-grammarly-shadow-root="true" style="position: absolute; top: 0px; left: 0px; pointer-events: none; z-index: 11;" class="cGcvT"></grammarly-extension>
+</div></section><section data-id="4f9e30bc76addb9a909d48d3844bce6a" data-background-image="205c951b75de8e06b36d98226b5e432c.png" data-background-color="rgb(239,236,233)" data-background-size="contain"></section><section data-id="c0f7f7dd2a5bab9a92b3910dd97c463e" data-background-image="acb2ff25482902939065f3a7bd558266.jpeg" data-background-color="rgb(17,23,43)" data-background-position="50% 100%">
+
+
+</section><section data-id="818b0ccceacc69d06accdc1ccec1165b" data-background-image="950cfa60e4f996282d63eb8b7034d6e1.jpeg" data-background-color="rgb(110,129,119)" data-background-size="contain">
+
+
+</section><section data-id="a520a1d1094d5598b4a05c0497a3e0df" data-background-color="#eeeeee"><div class="sl-block" data-block-type="text" style="width: 867.4px; left: 54.8px; top: 0px; height: auto;" data-name="text-cdf209" data-block-id="13601e2816450b16368fb657a3738c72"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10;">
+<h2>Specifications 📋</h2>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 805px; left: 86px; top: 100px;" data-name="text-05d182" data-block-id="233a08ffb7a6e87217e8d86cbf2c9302"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12;">
+<ul>
+	<li><span style="font-size:0.7em"><strong>SoC</strong>: NXP i.MX 7Dual (2x ARM Cortex-A7 @ 1.2GHz)</span></li>
+	<li><span style="font-size:0.7em"><strong>RAM</strong>: 2x Micron MT41K256M16 (1GB in total, DDR3)</span></li>
+	<li><span style="font-size:0.7em"><strong>Flash</strong>: None (prototype designed to always boots from TF card)</span></li>
+	<li><span style="font-size:0.7em"><strong>HDD</strong>: None</span></li>
+	<li><span style="font-size:0.7em"><strong>Network</strong>: RTL8273BS (802.11n + BT)</span></li>
+	<li><span style="font-size:0.7em"><strong>Main Screen</strong>: E Ink ED103TC2 (10.3" 1872x1404) with capacitive touch screen</span></li>
+	<li><span style="font-size:0.7em"><strong>Sub Screen</strong>: ER-TFT0784-1 (7.84" 1280x400) with capacitive touch screen</span></li>
+	<li><span style="font-size:0.7em"><strong>Screen Controller</strong>: i.MX7 integrated EPDC</span></li>
+	<li><span style="font-size:0.7em"><strong>Battery</strong>: 2x User-replaceable LiFePO4 18650 battery</span></li>
+	<li><span style="font-size:0.7em"><strong>EC</strong>: LPC55S28</span></li>
+	<li>
+<span style="font-size:0.7em"><strong>Ports</strong>:</span>
+	<ul>
+		<li><span style="font-size:0.7em">USB 2.0 Type-A Host x1</span></li>
+		<li><span style="font-size:0.7em">USB 2.0 Type C UFP with Power Delivery x1</span></li>
+		<li><span style="font-size:0.7em">USB 2.0 Micro B Serial Debug Console x1</span></li>
+		<li><span style="font-size:0.7em">TF card slot</span></li>
+	</ul>
+	</li>
+</ul>
+</div></div></section><section data-background-color="#eeeeee" data-id="a96f0cf6004efde5f0e9622083b53645"><div class="sl-block" data-block-type="text" style="width: 867.4px; left: 63.8px; top: 70px; height: auto;" data-name="text-cdf209" data-block-id="8bdd8428fcb1040d62f5bd5e66e2f9ce"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10;">
+<h2>Caster</h2>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 805px; left: 95px; top: 210px;" data-name="text-05d182" data-block-id="68619e2be0924f2138d4dc40029eb729"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11;">
+<ul>
+	<li>Caster is the codename for our open-hardware EPDC using an FPGA development board.</li>
+	<li>2230 M.2 E-key or A-key slot and provide one LVDS connector to connect to EPD panels.</li>
+</ul>
+</div></div></section><section data-background-color="#eeeeee" data-id="d45774c89ac1a297b4e5c53942a944ee"><div class="sl-block" data-block-type="text" style="width: 867.4px; left: 63.8px; top: 70px; height: auto;" data-name="text-cdf209" data-block-id="aeef1adf1146bc2dba4208c9f8f45e66"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10;">
+<h2>Specification 📋</h2>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 805px; left: 95px; top: 210px;" data-name="text-05d182" data-block-id="c90d8cb4967daa66e40eff2fac9fd4b3"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11;">
+<ul>
+	<li>
+<strong>FPGA</strong>: XC7A15T or XC7A35T-1CSG325C</li>
+	<li>
+<strong>RAM</strong>: Micron MT41K64M16 (128MB, DDR3)</li>
+	<li>
+<strong>Form Factor</strong>: M.2 NGFF A key or E key</li>
+	<li>
+<strong>Host Interface</strong>: PCIe Gen2 x1 (500 MB/s)</li>
+	<li>
+<strong>Port</strong>: 1x 30pin LVDS connector (4ch 7:1 LVDS + 1ch I2C) to connect to Eink panels</li>
+</ul>
+</div></div></section><section data-background-color="#eeeeee" data-id="a3eb9aba45475cd1ca01aada632411e1"><div class="sl-block" data-block-type="text" style="width: 867.4px; left: 62.8px; top: 70px; height: auto;" data-name="text-cdf209" data-block-id="375b5d4f60d65d68396ea2b06e3260ab">
+<div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10;" dir="ui">
+<h2>Caster System Block Diagram</h2>
+</div>
+<grammarly-extension data-grammarly-shadow-root="true" style="position: absolute; top: 0px; left: 0px; pointer-events: none; z-index: 10;" class="cGcvT"></grammarly-extension><grammarly-extension data-grammarly-shadow-root="true" style="mix-blend-mode: darken; position: absolute; top: 0px; left: 0px; pointer-events: none; z-index: 10;" class="cGcvT"></grammarly-extension>
+</div>
+<div class="sl-block" data-block-type="image" style="width: 806.4px; height: 455.04px; left: 80px; top: 181.48px; min-width: 1px; min-height: 1px;" data-name="image-782601" data-block-id="64a0a1674dcf777d8f583d9df3b06def"><div class="sl-block-content" style="z-index: 11;"><img style="" data-natural-width="280" data-natural-height="158" data-lazy-loaded="" data-src="7896c609256942162daf3ae8e9953e9f.svg"></div></div></section><section data-id="679f42db4519085a7d0319d0f03007aa" data-background-color="#eeeeee"><div class="sl-block" data-block-type="text" style="width: 867.4px; left: 63.8px; top: 70px; height: auto;" data-name="text-cdf209" data-block-id="3ee48d78c52eb7d5e7cf9bfe502ee7ee"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10;">
+<h2>#2 Laptop Chassis</h2>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 819px; left: 63.8px; top: 210px;" data-name="text-0ff213" data-block-id="ff4ec37fbb6556cbeb4fa9cfa1066eb2"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11;">
+<ul>
+	<li style="text-align:left">10.3 - 13.3 e-ink screen use an aspect ratio of 4:3.</li>
+	<li style="text-align:left">Difficult to find an original design manufacturer(ODM) that has a laptop chassis with a 4:3 display aspect ratio.</li>
+	<li style="text-align:left">There are not many laptop chassis that are completely open and made with FOSS.</li>
+</ul>
+</div></div></section><section data-id="3f48fc871ae15af9d9d4aa00318d388a" data-background-color="#ffffff"><div class="sl-block" data-block-type="text" style="width: 867.4px; left: 63.8px; top: 70px; height: auto;" data-name="text-cdf209" data-block-id="5b50e68e75ae4c67fbfb4cad88d1d61b"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10;">
+<h2>Progress</h2>
+</div></div>
+<div class="sl-block" data-block-type="image" style="width: 960px; height: 450px; left: 0px; top: 163px; min-width: 1px; min-height: 1px;" data-name="image-cd572d" data-block-id="8544c5317979e46df9194717631cb595"><div class="sl-block-content" style="z-index: 11;"><img style="" data-natural-width="1920" data-natural-height="900" data-lazy-loaded="" data-src="39817e6536817924386daeb945dd7d91.png"></div></div></section><section data-background-color="rgb(124,124,117)" data-background-image="31f90822a60ce4886e336becd7b1536d.jpg" data-background-size="contain" data-id="46bd60a98b8a7e42e65c59da2be33ce4"></section><section data-id="7bec75bfa3c6fbb4ef0c2485454ab8e3" data-background-image="dbc802838636028620c502b06ba343f2.jpg" data-background-color="rgb(124,125,120)" data-background-size="contain">
+
+
+</section><section data-id="bb692c10ffbfa02f4410bd86508faca3" data-background-image="327aabf513dbf4fa15592e8b29c1a7ed.jpg" data-background-color="rgb(182,176,157)" data-background-size="contain"></section><section data-id="9ab1ce363c9473c407eb51f4e635b30f"><div class="sl-block" data-block-type="text" style="height: auto; width: 828px; left: 91px; top: 186px;" data-name="text-17e477" data-block-id="db385890d5ebf80bba8e8a64e9ca5c00"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 10;">
+<p style="text-align:left"><span style="font-size:1.0em">To build our <strong>open-hardware</strong> and <strong>open-source</strong> e-ink laptop we are creating an:</span></p>
+
+<ul>
+	<li style="text-align:left"><span style="font-size:1.0em"><strong>Open-source</strong> design of a parametric laptop chassis using <strong>FreeCAD</strong>.</span></li>
+	<li style="text-align:left">We've started looking at different possible laptop designs.</li>
+	<li style="text-align:left"><span style="font-size:1.0em">Design files available on our <strong>EI2030 Github account.</strong></span></li>
+</ul>
+
+<p style="text-align:left"><br>
+By using <strong>FreeCAD</strong> to design the laptop chassis, we hope to enable others to remix and adapt our design to their needs.</p>
+</div></div>
+<div class="sl-block" data-block-type="text" style="width: 867.4px; left: 63.8px; top: 70px; height: auto;" data-name="text-cdf209" data-block-id="f5336b39ba15ae8789ca8b4f66f9e4a4"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 11;">
+<h2>Progress: #Laptop Chassis</h2>
+</div></div></section><section data-id="930dae19bc3447c7e99ba8cc5c24bc3d" data-background-color="#eeeeee">
+<div class="sl-block" data-block-type="text" style="height: auto; width: 819px; left: 88px; top: 280px;" data-name="text-0ff213" data-block-id="8555bb0cc08c4f4e77ad39c3d9f70402"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11;">
+<ul>
+	<li style="text-align:left">There isn't an open-source e-ink first operating system.</li>
+	<li style="text-align:left">There are few e-ink optimized applications.</li>
+</ul>
+</div></div>
+<div class="sl-block" data-block-type="text" style="width: 867.4px; left: 63.8px; top: 70px; height: auto;" data-block-id="fababc49da2db52be4376ab4e1153150" data-name="text-ee57dd"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 12;">
+<h2>#3 Operating System and Applications</h2>
+</div></div></section><section data-id="bc7dba4b37bd072a70c0a6e6a3c251c5"><div class="sl-block" data-block-type="image" style="width: 806.399px; height: 507.241px; left: 76.8005px; top: 140px; min-width: 1px; min-height: 1px;" data-name="image-99fb08" data-block-id="9ea1bf97cc92337b3a991442149d7b2b"><div class="sl-block-content" style="z-index: 10;"><img style="" data-natural-width="1275" data-natural-height="802" data-lazy-loaded="" data-src="a9ccd55e22467a391e8fdae47aacbaa7.png"></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 600px; left: 160px; top: 50.5px;" data-name="text-f1200d" data-block-id="8d24738ec9cccc20867901963651b40a"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11;">
+<h2>MuditaOS</h2>
+</div></div></section><section data-id="b5d877aa0992aaeddc832d6c74a35a42"><div class="sl-block" data-block-type="image" style="width: 806.4px; height: 428.8px; left: 76.8px; top: 135.6px; min-width: 1px; min-height: 1px;" data-name="image-90b158" data-block-id="0c29fdf5599c66d0555c0a7fa9f18ca9"><div class="sl-block-content" style="z-index: 10;"><img style="" data-natural-width="1134" data-natural-height="603" data-lazy-loaded="" data-src="1ebbafe08091bd1f4b9378f847e86858.png"></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 600px; left: 160px; top: 50.5px;" data-name="text-f1200d" data-block-id="ef15b52937a266de2dd6b161a4519098"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11;">
+<h2>LightOS</h2>
+</div></div></section><section data-id="cc1b8a31893d123b4aa7d6fc08a7da8c"><div class="sl-block" data-block-type="image" style="width: 806.399px; height: 418.086px; left: 76.8005px; top: 140.957px; min-width: 1px; min-height: 1px;" data-name="image-64932b" data-block-id="8d265e2164854fe904dbf354e70ecf53"><div class="sl-block-content" style="z-index: 10;"><img style="" data-natural-width="1273" data-natural-height="660" data-lazy-loaded="" data-src="6fa88099b19ff997e0fdfc52bdf924dd.png"></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 600px; left: 160px; top: 50.5px;" data-name="text-f1200d" data-block-id="c3d7ee14e6d94b7be753508c985c200a"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11;">
+<h2>Codex</h2>
+</div></div></section><section data-id="dbfad9fdd491dc39ee82c2a34bd81382"><div class="sl-block" data-block-type="image" style="width: 601.428px; height: 518px; left: 179.286px; top: 140px; min-width: 1px; min-height: 1px;" data-name="image-5baec0" data-block-id="bb3ed9fe7a95f671ff875828a4070076"><div class="sl-block-content" style="z-index: 10;"><img style="" data-natural-width="966" data-natural-height="832" data-lazy-loaded="" data-src="643cb8e3c0e4b68b6044d12596598f28.png"></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 600px; left: 160px; top: 50.5px;" data-name="text-f1200d" data-block-id="7c0c2c25094b74221e69d570d5d65f9c"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11;">
+<h2>Onyx Boox</h2>
+</div></div></section><section data-id="0caaef8ca58f6dd7f70c13b283495bd5"><div class="sl-block" data-block-type="image" style="width: 305.022px; height: 518px; left: 80px; top: 161px; min-width: 1px; min-height: 1px;" data-name="image-2aa40d" data-block-id="527719347f2f10c3f94108545b9deab7"><div class="sl-block-content" style="z-index: 10;"><img style="" data-natural-width="454" data-natural-height="771" data-lazy-loaded="" data-src="ace758ed8ac93f347bc10d63f96b6986.png"></div></div>
+<div class="sl-block" data-block-type="image" style="width: 480.464px; height: 518px; left: 447.768px; top: 161px; min-width: 1px; min-height: 1px;" data-name="image-8e1def" data-block-id="3bdec9cf43999b7bc1c7ddc8843f2647"><div class="sl-block-content" style="z-index: 11;"><img style="" data-natural-width="512" data-natural-height="552" data-lazy-loaded="" data-src="de49480a761bdc890c83b59b4cd398df.png"></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 600px; left: 160px; top: 50.5px;" data-name="text-f1200d" data-block-id="bc551e785e23e2c800cef00b3013bc1d"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12;">
+<h2>Dasung</h2>
+</div></div></section><section data-id="f39f0a1ffe6f48bf4aa78b31a60278d6"><div class="sl-block" data-block-type="text" style="width: 960px; left: 0px; top: 187px; height: auto;" data-block-id="e2afd7c660e6b15225e2a946160ec6f8"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10;">
+<h2 style="text-align:left"><strong>What would a digital device look like that respects our attention, time and health?</strong></h2>
+</div></div></section><section data-id="7d949563ec8b2c830c602f6ee8c53559" data-background-color="#eeeeee"><div class="sl-block" data-block-type="text" style="width: 867.4px; left: 63.8px; top: 70px; height: auto;" data-name="text-cdf209" data-block-id="5ea1b0309fc3f5304792a34ba69f4613"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10;">
+<h2>Progress: #Psychology &amp; UX</h2>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 828px; left: 90.5px; top: 186px;" data-name="text-17e477" data-block-id="ce40207430b9cb12c1be0d0391b43474">
+<div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11;" dir="ui">
+<p style="text-align:left"><span style="font-size:1.0em">To build our <strong>open-hardware</strong> and <strong>open-source</strong> e-ink laptop we are making:</span></p>
+
+<ul>
+	<li style="text-align:left"><span style="font-size:1.0em">Researching how to create e-ink optimized applications.</span></li>
+	<li style="text-align:left">Coming up with design principles.</li>
+	<li style="text-align:left"><span style="font-size:1.0em">Performing case studies on the possible psychological benefits of eink.</span></li>
+	<li style="text-align:left"><span style="font-size:1.0em">Exploring Android, Fuchsia, minimal Linux distribution</span></li>
+</ul>
+
+<p style="text-align:left"> </p>
+
+<p style="text-align:left">🔎 We are looking for software developers and UX/UI designers interested in building e-ink applications.</p>
+</div>
+<grammarly-extension data-grammarly-shadow-root="true" style="position: absolute; top: 0px; left: 0px; pointer-events: none; z-index: 11;" class="cGcvT"></grammarly-extension><grammarly-extension data-grammarly-shadow-root="true" style="mix-blend-mode: darken; position: absolute; top: 0px; left: 0px; pointer-events: none; z-index: 11;" class="cGcvT"></grammarly-extension>
+</div></section><section data-id="cfe81ab139452ce78469c8535f793ce3"><div class="sl-block" data-block-type="text" style="width: 867.4px; left: 63.8px; top: 70px; height: auto;" data-name="text-cdf209" data-block-id="27f0bf2b588201dd501c05f2ab50b08c"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10;">
+<h2>#4 Sourcing the E-ink Display</h2>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 819px; left: 70.5px; top: 164px;" data-name="text-0ff213" data-block-id="93dc8400032657d1e2b1eb92cb9572d1"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11;">
+<ul>
+	<li style="text-align:left">How to satisfy E-Ink's minimum order quantity(MOQ) (10,000?)</li>
+	<li style="text-align:left">The "chicken &amp; egg problem"
+	<ul>
+		<li style="text-align:left">Perceived lack of application &amp; demand and thus lack of suppliers producing e-ink displays.</li>
+	</ul>
+	</li>
+	<li style="text-align:left">DES, RLCD, E-ink, Electrowetting...</li>
+</ul>
+</div></div>
+<div class="sl-block" data-block-type="image" style="width: 374.479px; height: 237.56px; left: 18.913px; top: 435.684px; min-width: 1px; min-height: 1px;" data-name="image-853916" data-block-id="93851475a93fc3d9f120175a5097173b"><div class="sl-block-content" style="z-index: 12;"><img style="" data-natural-width="960" data-natural-height="609" data-lazy-loaded="" data-src="f35d1bbe4c93b0adf2d294f383be4793.png"></div></div>
+<div class="sl-block" data-block-type="image" style="width: 448.909px; height: 248.632px; left: 469.546px; top: 435.684px; min-width: 1px; min-height: 1px;" data-name="image-859a1c" data-block-id="4f1ce1223ebcee2d69f4e4c1a598095c"><div class="sl-block-content" style="z-index: 13;"><img style="" data-natural-width="1244" data-natural-height="689" data-lazy-loaded="" data-src="6ab1a1d1aa7507a4b1f7461079e17a1f.png"></div></div></section><section data-id="1240b5f0440d2d6b2b85654ca724f3fe"><div class="sl-block" data-block-type="text" style="width: 981.4px; left: -10.7px; top: 70px; height: auto;" data-name="text-cdf209" data-block-id="389ea8dd02b6004c7a9f3ed774f3b3d1"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10;">
+<h2><span style="font-size:0.9em">Progress: #Non-emissive Displays</span></h2>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 828px; left: 91px; top: 186px;" data-name="text-17e477" data-block-id="625030c847887a63e2053e9e9aa03231"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11;">
+<p style="text-align:left"><span style="font-size:1.0em">To build our <strong>open-hardware</strong> and <strong>open-source</strong> e-ink laptop we are:</span></p>
+
+<ul>
+	<li style="text-align:left">For our prototypes, we are using the 10.3" e-ink panel from Waveshare.</li>
+	<li style="text-align:left">We are looking to source e-ink panels from other distributers, Good Display. (no MOQ)</li>
+	<li style="text-align:left">We are exploring using alternative epaper technologies such as display electronic slurry (DES).</li>
+</ul>
+</div></div></section><section data-id="7ace703fe49fe15d13ecc150ce8fa1c5"><div class="sl-block" data-block-type="text" style="width: 867.4px; left: 63.8px; top: 70px; height: auto;" data-name="text-cdf209" data-block-id="d4f88e98f66e3af816344ee6475ee472"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10;">
+<h2>Progress</h2>
+</div></div>
+<div class="sl-block" data-block-type="image" style="width: 438.667px; height: 329px; left: 0px; top: 185.5px; min-width: 1px; min-height: 1px;" data-name="image-a5f25c" data-block-id="b94d87dbcf35ba0fff53ed61639e15cf"><div class="sl-block-content" style="z-index: 11;"><img style="" data-natural-width="1800" data-natural-height="1350" data-lazy-loaded="" data-src="1d8fc35ea956ce4b670a2be724002303.png"></div></div>
+<div class="sl-block" data-block-type="image" style="width: 307.652px; height: 410px; left: 594px; top: 144px; min-width: 1px; min-height: 1px;" data-name="image-59cd9b" data-block-id="15e0869c310a27894d6bc5f5dbbeac57"><div class="sl-block-content" style="z-index: 12;"><img style="" data-natural-width="1013" data-natural-height="1350" data-lazy-loaded="" data-src="5ae09a78162116242a5347f773704fb2.png"></div></div>
+</section><section data-id="fe16268ea1e5e0317b7b2e7944a11015" data-background-color="#eeeeee"><div class="sl-block" data-block-type="text" style="width: 867.4px; left: 63.8px; top: 70px; height: auto;" data-name="text-cdf209" data-block-id="2b314ed5a041c4789692ffb036d7769d"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10;">
+<h2>#5 Manufacturing Process</h2>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 819px; left: 70.5px; top: 177px;" data-name="text-0ff213" data-block-id="2ceeeeb970e5d5909ec9150f014cd63e">
+<div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11;" dir="ui">
+<ul>
+	<li style="text-align:left">Costs and prices (injection <span class="module__title__link">moulding</span>!)</li>
+	<li style="text-align:left">Sourcing of parts (keyboard, hinges, etc.)</li>
+	<li style="text-align:left">Minimum order quantities</li>
+	<li style="text-align:left">Domain specfic knowledge</li>
+	<li style="text-align:left">Mistakes happen</li>
+	<li style="text-align:left">Time</li>
+</ul>
+</div>
+<grammarly-extension data-grammarly-shadow-root="true" style="position: absolute; top: 0px; left: 0px; pointer-events: none; z-index: 11;" class="cGcvT"></grammarly-extension><grammarly-extension data-grammarly-shadow-root="true" style="mix-blend-mode: darken; position: absolute; top: 0px; left: 0px; pointer-events: none; z-index: 11;" class="cGcvT"></grammarly-extension>
+</div>
+<div class="sl-block" data-block-type="image" style="width: 680px; height: 272px; left: 148.55px; top: 428px; min-width: 1px; min-height: 1px;" data-name="image-9a2689" data-block-id="7c94a5faaef89fe8f85321156a9076f6"><div class="sl-block-content" style="z-index: 12;"><img style="" data-natural-width="750" data-natural-height="300" data-lazy-loaded="" data-src="7e91a6e72bbc7fb512576ce6ed07b1d6.png"></div></div></section><section data-id="7c767da64f4a2ad2d0a1d9276c4cb036"><div class="sl-block" data-block-type="text" style="width: 867.4px; left: 63.8px; top: 70px; height: auto;" data-name="text-cdf209" data-block-id="24c48e69236f1c473a87bc395c4fb907"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10;">
+<h2>Progress</h2>
+</div></div>
+
+
+<div class="sl-block" data-block-type="text" style="height: auto; width: 828px; left: 91px; top: 186px;" data-name="text-17e477" data-block-id="cdd5daba38f9abea3ba8331ab17c2931"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11;">
+<p style="text-align:left"><span style="font-size:1.0em">To build our <strong>open-hardware</strong> and <strong>open-source</strong> e-ink laptop:</span></p>
+
+<ul>
+	<li style="text-align:left">We are 3D printing our initial prototypes, i.e., laptop chassis.</li>
+	<li style="text-align:left">Producing laptops at scale requires injection moulding.</li>
+	<li style="text-align:left">Exploring crowdfunding options.</li>
+</ul>
+
+<p style="text-align:left"> </p>
+
+<p style="text-align:left">🔎 We are looking for more people with experience in the manufacturing process.</p>
+</div></div></section><section data-id="4e1fa453c1ee468df5e2742f833122d0"><div class="sl-block" data-block-type="text" style="width: 867.4px; left: 63.8px; top: 70px; height: auto;" data-name="text-cdf209" data-block-id="01c6d52798e2b8980c55780749a22e17"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10;">
+<h2>Next Steps</h2>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 819px; left: 80px; top: 159px;" data-name="text-0ff213" data-block-id="8bcf016b10c2aebf76205e69fa0aba3d"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11;">
+<ul style="color:rgb(14, 16, 26)">
+	<li style="color:rgb(14, 16, 26)"><span style="font-size:0.9em"><span style="color:rgb(14, 16, 26)">Learn from Archer and work on our second prototype that includes Caster, our open EPDC.</span></span></li>
+	<li style="color:rgb(14, 16, 26)"><span style="font-size:0.9em"><span style="color:rgb(14, 16, 26)">Iterate on the open design of our laptop chassis and test.</span></span></li>
+	<li style="color:rgb(14, 16, 26)"><span style="font-size:0.9em"><span style="color:rgb(14, 16, 26)">Build e-ink optimized applications and identify people who are interested in contributing.</span></span></li>
+	<li style="color:rgb(14, 16, 26)"><span style="font-size:0.9em"><span style="color:rgb(14, 16, 26)">Learn more about the manufacturing process.</span></span></li>
+	<li style="color:rgb(14, 16, 26)"><span style="font-size:0.9em"><span style="color:rgb(14, 16, 26)">2021 Hackaday Prize</span></span></li>
+	<li style="color:rgb(14, 16, 26)"><span style="font-size:0.9em"><span style="color:rgb(14, 16, 26)">Crowdsourcing Campaign in 2022.</span></span></li>
+</ul>
+</div></div></section><section data-id="fe8773020782f2e63b4ef209c7f9b535" data-background-color="#ffffff">
+
+
+
+<div class="sl-block" data-block-type="image" style="width: 709.77px; height: 167.126px; left: 144.865px; top: 0px; min-width: 1px; min-height: 1px;" data-name="image-a0373e" data-block-id="30cbbe0dadb7e82ed030a2d90a473af0"><div class="sl-block-content" style="z-index: 11;"><img style="" data-natural-width="344" data-natural-height="81" data-lazy-loaded="" data-src="33e371f9428f9c2742c8e921cd5267ae.png"></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 305px; left: 80px; top: 350px;" data-name="text-8cd33d" data-block-id="cd9cd4133dcd8298ec43219436ef0b2d"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12; font-size: 150%;">
+<p><a href="https://twitter.com/alexsotodev" target="_blank">@alexsotodev </a></p>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 403px; left: 541.5px; top: 469px;" data-name="text-f5e42f" data-block-id="e98137fa47c75f761c5caedafa2c1bf6"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 13; font-size: 150%;">
+<p><a href="https://alexsoto.dev/slides" target="_blank">alexsoto.dev/slides</a></p>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 459px; left: 21px; top: 469px;" data-name="text-5841d8" data-block-id="0386f4fea730fae2eb118620a99bb8d6"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 14; font-size: 150%;">
+<p><a href="mailto:contact@alexsoto.dev" target="_blank">contact@alexsoto.dev</a></p>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 449px; left: 495.5px; top: 350px;" data-name="text-744425" data-block-id="95125d7be8bfa1e25e4aba7a70981136"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 15; font-size: 150%;">
+<p><a href="https://ei2030.zulipchat.com/" target="_blank">ei2030.zulipchat.com</a></p>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 696.5px; left: 170.5px; top: 201px;" data-name="text-29f97c" data-block-id="313650686bbcf3647c54f790c36f5c2c"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 16;">
+<p><span style="font-size:1.2em">If any of these challenges or a part of the project interests you let's talk</span></p>
+</div></div></section><section data-background-color="#ffffff" data-id="361dc357ed2be9563202d60e8e05301d"><div class="sl-block" data-block-type="image" style="width: 560.191px; height: 131.905px; left: 218.566px; top: -7.964px; min-width: 1px; min-height: 1px;" data-name="image-a0373e" data-block-id="c8cf794fcaa9d9cd86296d570bd09233"><div class="sl-block-style" style="z-index: 10; transform: rotate(0deg);"><div class="sl-block-content" style="z-index: 10;"><img style="" data-natural-width="344" data-natural-height="81" data-lazy-loaded="" data-src="33e371f9428f9c2742c8e921cd5267ae.png"></div></div></div>
+<div class="sl-block sl-block-group" data-block-type="group" data-name="group-ff79b4" style="width: auto; height: auto;" data-block-id="891e083045e5dc95abfe46ede08aa705"><div class="sl-block-content sl-block-group-content" style="transform-origin: 800.001px 417.86px 0px; z-index: 11;">
+<div class="sl-block" data-block-type="image" style="width: 164.235px; height: 147.874px; left: 717.883px; top: 324.415px; min-width: 1px; min-height: 1px;" data-name="image-1ec194" data-block-id="d85048c4104b7ce26caeca9ddf70100c"><div class="sl-block-content" style="z-index: 12;"><img style="" data-natural-width="522" data-natural-height="470" data-lazy-loaded="" data-src="40748b71673d1fd70ac76c9ea37cc8c2.gif"></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 88px; left: 756.001px; top: 472.304px;" data-name="text-b25b69" data-block-id="231e6fb4f0daf267e6b5904b0e922e7b"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 13;">
+<p><span style="font-size:0.7em">Manuel</span></p>
+</div></div>
+</div></div>
+<div class="sl-block sl-block-group" data-block-type="group" data-name="group-6ad51c" style="width: auto; height: auto;" data-block-id="7c2e9323acc40d9102e3c3b1e74c3964"><div class="sl-block-content sl-block-group-content" style="transform-origin: 130.49px 217.911px 0px; z-index: 14;">
+<div class="sl-block" data-block-type="image" style="width: 214.026px; height: 143.495px; left: 23.4765px; top: 130.907px; min-width: 1px; min-height: 1px;" data-name="image-de0426" data-block-id="ea21400a89317f5b91afda1812fcaf1f"><div class="sl-block-content" style="z-index: 15;"><img style="" data-natural-width="528" data-natural-height="354" data-lazy-loaded="" data-src="0bc896311847fea5d39c31c95df83294.gif"></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 103px; left: 78.9895px; top: 265.915px;" data-name="text-0cea40" data-block-id="c946a3caf62e7d6fcb22c0538a5cca1c"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 16;">
+<p><span style="font-size:0.7em">Wenting</span></p>
+</div></div>
+</div></div>
+<div class="sl-block sl-block-group" data-block-type="group" data-name="group-095255" style="width: auto; height: auto;" data-block-id="55b6a2351ea64ff971f3f277551f8ac0"><div class="sl-block-content sl-block-group-content" style="transform-origin: 800.001px 227.661px 0px; z-index: 17;">
+<div class="sl-block" data-block-type="image" style="width: 232.411px; height: 155.821px; left: 683.795px; top: 130.907px; min-width: 1px; min-height: 1px;" data-name="image-9ce5cc" data-block-id="180f0bc78ed0a0669263801e3a409c09"><div class="sl-block-content" style="z-index: 18;"><img style="" data-natural-width="528" data-natural-height="354" data-lazy-loaded="" data-src="3951c8678f5b26d62166f7d0f132819a.gif"></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 103px; left: 742.879px; top: 285.415px;" data-name="text-6b5467" data-block-id="22a332d5580990be30b4fc73f32ef3dd"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 19;">
+<p><span style="font-size:0.7em">Tom</span></p>
+</div></div>
+</div></div>
+<div class="sl-block sl-block-group" data-block-type="group" data-name="group-53f635" style="width: auto; height: auto;" data-block-id="841b1e7de27959ee4b38154b988d8698"><div class="sl-block-content sl-block-group-content" style="transform-origin: 140.68px 608.994px 0px; z-index: 20;">
+<div class="sl-block" data-block-type="image" style="width: 249.917px; height: 156.365px; left: 15.721px; top: 511.304px; min-width: 1px; min-height: 1px;" data-name="image-3135ec" data-block-id="84e64e8e94e70d741f1365ae3324d2fc"><div class="sl-block-content" style="z-index: 21;"><img style="" data-natural-width="561" data-natural-height="351" data-lazy-loaded="" data-src="afd67fd3b2ef7fc3a251fb7254f9abd4.gif"></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 103px; left: 89.181px; top: 667.684px;" data-name="text-3a3185" data-block-id="f84e4ea6a1000f661d685a1af0dca567"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 22;">
+<p><span style="font-size:0.7em">Giovanni</span></p>
+</div></div>
+</div></div>
+<div class="sl-block sl-block-group" data-block-type="group" data-name="group-b80370" style="width: auto; height: auto;" data-block-id="8b33f9dd0f1ad8a91f150fa3e015a38c"><div class="sl-block-content sl-block-group-content" style="transform-origin: 130.49px 430.415px 0px; z-index: 23;">
+<div class="sl-block" data-block-type="image" style="width: 169.976px; height: 167px; left: 45.5015px; top: 324.415px; min-width: 1px; min-height: 1px;" data-name="image-96a6e4" data-block-id="cef7de27eba618e968aa5357d5bdb61d"><div class="sl-block-content" style="z-index: 24;"><img style="" data-natural-width="514" data-natural-height="505" data-lazy-loaded="" data-src="a6bfc2f76215607e34697ecbc2ca3b97.gif"></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 103px; left: 66.9915px; top: 497.415px;" data-name="text-4a1a86" data-block-id="b6a885fb33b4f145161a8bc6133c6593"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 25;">
+<p><span style="font-size:0.7em">Anjan</span></p>
+</div></div>
+</div></div>
+<div class="sl-block sl-block-group" data-block-type="group" data-name="group-c87a49" style="width: auto; height: auto;" data-block-id="00fb1237195c7c87c63bae6499fc519a"><div class="sl-block-content sl-block-group-content" style="transform-origin: 458.68px 411.515px 0px; z-index: 26;">
+<div class="sl-block" data-block-type="image" style="width: 205.673px; height: 141.5px; left: 355.843px; top: 324.415px; min-width: 1px; min-height: 1px;" data-name="image-08ab33" data-block-id="f939c8c676b2560418d36ae7374f4c7e"><div class="sl-block-content" style="z-index: 27;"><img style="" data-natural-width="516" data-natural-height="355" data-lazy-loaded="" data-src="bd9ac6bbf7d27af6c6d9067f4d938601.gif"></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 103px; left: 401.516px; top: 459.614px;" data-name="text-b70c86" data-block-id="168843d180570ad95642a15d2664be0b"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 28;">
+<p><span style="font-size:0.7em">Matt</span></p>
+</div></div>
+</div></div>
+
+
+
+<div class="sl-block" data-block-type="image" style="width: 236.055px; height: 152.63px; left: 355.843px; top: 132.785px; min-width: 1px; min-height: 1px;" data-name="image-6c57c3" data-block-id="e3c8801c6598ab36ecef4d46bd90f595"><div class="sl-block-content" style="z-index: 29;"><img style="" data-natural-width="498" data-natural-height="322" data-lazy-loaded="" data-src="1f0aefe7beba3fe1555550b4230a1686.gif"></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 103px; left: 428.5px; top: 274.402px;" data-name="text-36c855" data-block-id="eab08190054bc1f6b46e11654eaa1a90"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 30;">
+<p><span style="font-size:0.7em">Brodie</span></p>
+</div></div>
+<div class="sl-block" data-block-type="text" style="width: 594px; left: 294.898px; top: 560px; height: auto;" data-block-id="729d0af783307eed04a0a7c9d04613d8" data-name="text-3b9093">
+<div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 31;" dir="ui">
+<h2>Thank you! 🎉🙂</h2>
+</div>
+<grammarly-extension data-grammarly-shadow-root="true" style="position: absolute; top: 0px; left: 0px; pointer-events: none; z-index: 10;" class="cGcvT"></grammarly-extension>
+</div></section>
+			</div>
+		</div>
+
+		<script>
+			var SLConfig = {"deck": {"id":2134061,"slug":"foss-north-2021","title":"foss-north 2021: Building an Open-Source Eink Laptop","description":"","width":960,"height":700,"margin":0.05,"visibility":"self","published_at":null,"sanitize_messages":null,"thumbnail_url":"https://s3.amazonaws.com/media-p.slid.es/thumbnails/8754c3a5e86400a4dc41d2139985fe19/thumb.jpg?1622198807","view_count":0,"user":{"id":1641678,"username":"alexsotodev","name":"Alexander Soto","description":"I’m a community organizer, educator, software engineer, hacktivist, and agent of social change. \r\n\r\nMy interests are in exploring community-building, social justice, education, and leveraging technology to address social problems.","thumbnail_url":"https://media.slid.es/avatars/1641678/profile.jpg","account_type":"lite","team_id":null,"settings":{"id":9204687,"present_controls":true,"present_upsizing":true,"present_pointer":true,"present_notes":true,"default_deck_tag_id":null}},"background_transition":"slide","transition":"none","theme_id":null,"theme_font":"montserrat","theme_color":"sand-blue","auto_slide_interval":0,"comments_enabled":true,"forking_enabled":false,"rolling_links":false,"center":false,"shuffle":false,"should_loop":false,"share_notes":false,"slide_number":false,"slide_count":41,"rtl":false,"version":2,"collaborative":true,"deck_user_editor_limit":1,"data_updated_at":1622210248798,"font_typekit":null,"font_google":null,"time_limit":15,"navigation_mode":"default","upsizing_enabled":true,"notes":{"f35b598f08bd1b25d27cfc8dcd1f7a6c":"Overview of e-ink based devices and difficulties faced.","bfc083b91732adc4409492649645c2f0":"","e9265801ac1030e6e25f3c9cf148d775":"","4c2f29c44de311f9892be2ee44b7cf0f":"Summary\n\nMy name is Alexander Soto, my pronouns are (he/him/his). I'm currently an Expert-In-Residence at Resilient Coders and I'm the project lead at EI2030.\n\nBelow you can find my Twitter handle @alexsotodev, email, our Zulip Server, and website where you'll find the slides posted for this talk.","65f8e80ef3efe4da91df4cb0ce717c1c":"Thank you to foss-north for organizing this event and for the invitation.","786cdd4efb0f18c24a25123a03a8f6f6":"","bf53c36555724891c7a61fa25a2e4a05":"It's 2021, and there are several e-ink based devices to choose from:\n- Onyx Boox Max Lumi\n- Dasung HD-FT\n- Hisense A7CC 6.7\" Kaliedo 2 Color e-Ink\n- Hisense Q5 RLCD\n- Kindle Paperwhite\n- c\n","4c2c639ea8fa684c859e3f95cbac207f":"","aba0b2b28505dea843bb68b9caf38ab9":"Community sizes","a74005f45c093592c4f0df350c287c58":"I'm not passing a value judgment rather making an observation.\n\nThis segmentation makes it difficult to unite as a community and push manufacturers for open design, open hardware, and free open-source software.","fc4a5eb0ae9d1e87b3cb0aae33b4cea2":"","f9b0eaa5c5297488239aa9ccc83f05bc":"- For makers/tinkerers/DIY to iterate and hack on...\n- Manufacturers intentionally hiding information, chemically peeling off components to prevent reverse engineering.","008b6005c8c1c9274566a88b66405e9a":"","7f64a5c8603be0e557eebc18c27d6786":"- There doesn't exist an e-ink first UX/UI\n- Interfaces are non-existent\n- Proprietary and some violate GPLv3, Onyx\n- Android-based devices stop receiving updates and support from manufacturers.","e4516b357be9b791162e430528652535":"","de9fdac26dc2f79ef9e8764a3de88258":"","ff7a0fb8d9974b43fddc33363daa299f":"","222732b3d75b955ca3c12c22e7ab92c0":"- We can open design, open hardware, and use free open-source software.\n- The building and creation of this community are more important than any product that may come from it.","2d9f44bcba05734dcd58b71cd46a0c89":"","0e5e2d4ae050cf4722dd040af4020f4c":"","8607d525c49f572fc34dc9f7c057bb92":"","6b6e9e1ba28f3fe284bbb8cab7ea5935":"","969c4d55ed2e8d12ed07a5fe2f84a049":"","4395736f6dda647dee7d2f82055fd5b4":"","1d86ef81305b52050dfde4795df5f0a7":"","99872e30182c15fcaf3d320b7f3cf71b":"","fb0b12c87df043d9ca371b376a87d4d3":"","b165330c523e929fa3bc2bedc5e8fabf":"","8566b7f0a6ae09f6c65aa9c048707ade":"","5269e2c7761b42f29af2ee0efc4d92ca":"","17d9fad8480b57ce21a4e1749e4f25d2":"- People self-organize into working groups.\n- Some categories for the working groups:\n- low power, high power, sub $500, $500-800, SBC, microcontrollers, general purpose.\n","b5f41e9d8af22d3b22f503f8198e54c6":"","a2c595df2639937d44f944993c66d9f2":"","63f172e21bac8a6e93ec078ba3a17003":"- Created a blog post\n- Received visibility and support on HN, Reddit, and featured in magazines in Germany and Spain.\n- Work in progress","8737840c69dbf92f79ea20e6898f877f":"","31d9e97b89d198567969f7c21b1e5187":"- Using a pi-top, a laptop chasis intended for a raspberry pi and retrofit it with a Dasung panel or possibly a waveshare.\n- V1 of the pi-top released as open source.\n- in the future could be used with other SBC's and Pine64\n","c376f033a14061d0d92a0fa956bb9db9":"- Low powered microcontrollers and eink\n- Battery life measured in months, year.\n","3c39a446de0466753cc4d45914d2ab3c":"","5c942f41f55f93a4d5962cae62706cbe":"Sent an email to pi-top about collaborating/gaining access to CAD files for their pi-top v1/v3","e609e8205dca5679cdc5922b099a8003":"Researched and learned about the VIA OpenBook a laptop reference design from VIA Technologies, announced in 2008. The laptop case design was released as open source, and was modifed to work for 15inches.","c9f377aea441422068281fb680c4bdd6":"","816c8c9403a46292e37ddc451c8dc3f1":"Reached out to Slimbook. A manafacturer in Spain provided the entire body of the laptop: the entire case, the cooling system, the screen, the keyboard, the backlight, the webcam, the speakers and the battery.\n\nhttps://slimbook.es/en/noticias-notas-de-prensa-y-reviews/435-slimbook-collaborates-with-the-powerpc-laptop","625492d9d436cf261b9b7aca013045c5":"Reached out to the open book project creator, Joey for support. Agreed to help by providing suggestions/input.","807538cc71f5e49bb90af41262dd1184":"Contacted Ambiq for an eval kit for their Apollo 4 blue","6fd97c70942133144735d72aeb0f4b72":"","05cf5523ec59ebb8d82ee60da5ea1460":"","fe8773020782f2e63b4ef209c7f9b535":"","417212cd805b4be249e799b983de05f2":"","3a64721476251e63edcf326a1eeadd57":"","9e8fff0b9cc7835a52a2722de4fef6e8":"","5d22cdb942bd7ef1f050a4e55a3266ad":"","63e24f4bd82614f4a71815e3322446ab":"","6dc746d2fec74b69c624eba64e176548":"","280e586e2fdb83e692f6de8e1f67913a":"","e14f0e2d0f35b60cd21a70b58ad04cf8":"","9320bddd8d9de6817094957b7d243ea0":"","997c42514591b002bbb098c3ddf304ce":"","5aa0b4dde881f0e4af82dd3b0033a932":"","ef41826987623f574b666b5cd6b73695":"","0917311fc390653d848fefd3a66c8739":"","623dfb50588934e5c9de5ff835c742bb":"The RepRap project started in England in 2005 as a University of Bath initiative to develop a low-cost 3D printer that can print most of its own components, but it is now made up of hundreds of collaborators worldwide. RepRap is short for replicating rapid prototype. As an open design, all of the designs produced by the project are released under a free software license, the GNU General Public License.\n\nAll of the plastic parts for the machine on the right were produced by the machine on the left. Adrian Bowyer (left) and Vik Olliver (right) are members of the RepRap project.","d379d3d2c5359d77dce99e8ab40deea6":"The Arduino project began in 2005 as a tool for students at the Interaction Design Institute Ivrea in Ivrea, Italy, aiming to provide a low-cost and easy way for novices and professionals to create devices that interact with their environment using sensors and actuators. \n\nCommon examples of such devices intended for beginner hobbyists include simple robots, thermostats and motion detectors. ","d6c2cd085fa715ec3eff8c8d4e83517e":"","69fd4ea7af1bb184f770a59d85aa74ce":"","6bd981bc8cb2cf16dba000941903085e":"","1056f1099efb553f2d3811523b05a847":"","11660885d67baaa21ab6742aa079e3da":"","05f71d3b433548a1c62a37ccd0bb19db":"","a71a861c56d42fd1b09e81a3a116649e":"","d41a04069514057e9bcd6590bcddeef2":"","48b3f56a89781d1185d2961ef18d504c":"","5ee2c3d444d5b160e9d5ef6438f4798c":"","0107c264692d3077211af80fe7295576":"","92613ebd3321ae1e32a34c81f08f4366":"","a8c05150d18a32964566129d0d6bafe7":"","9448cc40c7897ffdcd9c0ae2afe3c57d":"","6f39eefc19fd83014fb3c7db2ad4445d":"","9dbd1942cf023bda82848135f3330829":"","5a8747e4063f10e313947b2516fa992e":"","41bcf9fdc4051cda1818fe0d2f2d887b":"","4f38fb704a6ffac16b1094fed2679613":"","4945261c74785e47347a100c14f57db1":"","5bd4ff96b2bd9f99c45bc1ede6bb0bde":"","e0eff80f23d084b48d9776e7ba8f2fcc":"","fca0ec53a3c96988994f63a2188802c1":"","57ec9eefef607c1c439d800588dff4ae":"","90c8f1524f018bacc9218fe8cf1ec0c0":"","84b48a237df337176f24836f4bdf3890":"","d2c07d2da48b075ff02dff94823d44aa":"","08ed9c7a1a8f43ce2050ed78a4f043a0":"","69c8ed3c4f8bda8af3e77470bb0f009b":"","a7cd5d36acb02578a86e3ac8127d4223":"","f62b740e44b6394dd82b1e3ff9fd60b5":"","ddd8cccfe6f743f4f3bc1537360e4d4e":"","9621e782e4b5556c9772d687245d3601":"","450bbccf43a16ea6c82a623af3da7980":"","7c4933b3c45a0bd3ecc45343012c832b":"","b465881eba14a7fbab00065e8217f74a":"","e49fc4fcc20ee1dc925f659ff91d9fbc":"","f67d002d62594557d7f0cb17889a703a":"","46fe0156ab6e7c2b907802a074e0983f":"","0bf76dfc69dacec1a0d082080fc0eff9":"","aec3a6fc8bd5daf964db118fa27ad446":"","828c2d43638b2649c114d3e695f0e85f":"","d55f5d89ea763cd61842fa39db903341":"","89ad059a44b89dd79369ecd9b2f0559c":"","a635ecf95ab89c7514ca5242dcfff070":"","3eaca3de035e3e7b46cf643b261453b4":"","b20d899b15ad0b4bbb139b646c0c764e":"A little history, EI2030 started about a year ago amidst the COVID-19 pandemic, the transition to remote-working, and the increasing amount of time we spend on our digital devices. The goal of EI2030 is to promote healthier computing practices, connecting people who are interested in learning, discussion, and facilitating the exchange of ideas and collaboration.","fcfbf20cde38a98bc2dbc2932deec6e3":"","cbf5857a3e182d3bb304c1dcceba72d7":"Summary: We are a broad mix of hardware/productivity hackers, health-tech enthusiasts, and gadget lovers. Our community is open to everyone and we are steadily growing. I want to say thank you to...\n\nWenting:  DSP Product Application Engineer, member of #Driving E Ink Displays and #Non-emissive Displays working groups, and leads the development of our Archer/Caster laptop prototypes.\n\nBrodie: An electrical engineer focuses mainly on product design, member of #Laptop Chassis working group and leads the development it's development.\n\nTom: Studies psychology at the University College London, member of the #Psychology \u0026 UX working group, focuses on the psychological benefits of e-ink and the UX/UI of creating e-ink applications\n\nAnjan: Supports day-to-day activities at EI2030, experience in industry and displays, member of #Non-emissive displays and #Psychology \u0026 UX working groups.\n\nMatt: Software developer of 15+ years, leading the development of our website using Gatsby\n\nManuel: One of the original founders of responsible for marketing and community activities.\n\nGiovanni: Supports with day-to-day activities at EI2030 and is a member of #Low Power and #PaperTerm working groups.","333ad2e6b03e02244eac3314b0994835":"We've recently have launched: The Community Built E-ink Laptop Project. We are building a proof of concept of an open-source and open-hardware e-ink laptop. As a community, we pool our resources, knowledge, and expertise in working groups.","166c038cfa79729accb73f2b3e8e2cf9":"- Zulip - Topic threading\n- Github\n- Gatsby aggregates from different repositories using git-source-plugin.","9de484958eba467f4d048433729d0cdb":"Summary: mention working groups on left directly related to eink laptop, low-power mcu's and paperterm exploring the possible use cases of an eink laptop\n\nDriving E-Ink displays:\nExplore the different ways to drive an eink display\n- Near: Using the i.MX7/8 and RK3566 family of microcontrollers.\n- Long: Building an open-source external electrophoretic display controller.\n\nLaptop Chassis:\n- Using open-source software, i.e. FreeCAD/OpenSCAD create a laptop chassis that can be used for building an eink laptop.\n\nNon-emissive Displays:\n- Discuss non-emissive displays such as e-ink, RLCD, DES, and alternatives.\n- Create prototypes and learning more about display physics. \n- Research on non-emissive displays’ developments will be distilled and shared for current/future working groups.\n\nPsychology \u0026 UX:\n- Investigate the psychological benefits of e-ink.\n- Ideate and investigate ways to design the UX of e-ink devices to improve productivity and well-being through psychology.\n\nLow Power MCU's:\n- Explore the available Real-time operating systems and develop a Linux port from scratch for the Ambiq Apollo 3 \u0026 4 series processors or similar ultra low power microcontroller.\n\nPaperTerm:\n- A microcontroller-based project used solely to connect to and run/interact with programs installed on remote computers through SSH/telnet, remote desktop, VNC. etc\n\n\n\n\n","4bdc16691397f685557ae33d74f6bd9f":"","7aa127fb1a4d680dede009923c63312b":"","f30a98dc6cf2daf46383f3bb9dd8bbcd":"- EPDC, specifically designed to drive e-ink panels.\n- Waveforms control the transition of state changes on the screen, text, graphics, etc.\n- Dasung, Onyx","c055372b5411eda8bc750c6092e9b067":"","818b0ccceacc69d06accdc1ccec1165b":"","679f42db4519085a7d0319d0f03007aa":"- STEP, STL\n- Made with proprietary software","3f48fc871ae15af9d9d4aa00318d388a":"","930dae19bc3447c7e99ba8cc5c24bc3d":"\n\n\n","7d949563ec8b2c830c602f6ee8c53559":"#Psychology \u0026 UX working group\n","fe16268ea1e5e0317b7b2e7944a11015":"- The cost of Injection moulding anywhere between 10-15 thousandth.\n- Sourcing of parts: keyboard, hinges among others.\n- Minimum order quantities that need to be fulfilled\n- Mistakes happen in the manufacturing process\n- Time consuming\n- Domain-specfic knowledge\n\n","1240b5f0440d2d6b2b85654ca724f3fe":"","2d9c477bd683eafc42026af75949ec41":"","4e1fa453c1ee468df5e2742f833122d0":"","94d0a8b60575d83c1a8e32e13a829c01":"","cfe81ab139452ce78469c8535f793ce3":"","7ace703fe49fe15d13ecc150ce8fa1c5":"","c0f7f7dd2a5bab9a92b3910dd97c463e":"We've started working on the mainboard for our prototype Archer. The mainboard has been fabricated, experienced some delays in shipping.\n","7bec75bfa3c6fbb4ef0c2485454ab8e3":"","de8ae6aee5640a456265512b95a5068d":"","dc168491cd9ca43b0654b12599b549f5":"","a520a1d1094d5598b4a05c0497a3e0df":"Non-goals:\n- Archer will not represent the performance level of the final product\n- Archer is not optimized for low power consumption\n","5ec147e39690a2511b3b9d9de6a812d1":"","51e51ade403fced9a9d88678136eb1f2":"- Creating an open EPDC enables the creation of open-source waveforms as an alternative to the vendor waveforms.\n- The creation of open EPDC and waveforms enables the re-use of eink displays and opens up space for others to contribute. \n\n\n","2cb96347f66069240e5afc4063a6571a":"","f9d4b62f4893f9b2cc21505465d89bba":"","e93e5fea7b02419ee04e65f91d552bc2":"","de443e23070514b31cd6398b226255bd":"","a96f0cf6004efde5f0e9622083b53645":"\n\n\n\n","d45774c89ac1a297b4e5c53942a944ee":"","a3eb9aba45475cd1ca01aada632411e1":"","17529676715e143a4a8530d6ee4569f9":"Goals of Archer\n    Proof of Concept of an eink laptop.\n    Enable early development of EC firmware and the user software.\n    Test chassis design ideas.\n    Verify peripheral circuit design.\n    Enable future prototypes","46bd60a98b8a7e42e65c59da2be33ce4":"","971868e0b80ad3abeb638f7468cb912d":"","bb692c10ffbfa02f4410bd86508faca3":"","9ab1ce363c9473c407eb51f4e635b30f":"    Brodie is in the early stages of designing a parametric laptop chassis using FreeCAD.\n","bc7dba4b37bd072a70c0a6e6a3c251c5":"- MuditaOS: Based on FreeRTOS(Real-time operating system), open-source e-ink mobile operating system. Developer Preview to sign-up","b5d877aa0992aaeddc832d6c74a35a42":"Light Phone II / Light OS: Based on Android Operating System Project (AOSP) and uses a React Native app as the default launcher.","cc1b8a31893d123b4aa7d6fc08a7da8c":"Remarkable / Codex: A custom Linux-based OS optimized for low-latency for their tablet. Parts are available: boot-loader, kernel, SDK | UI is not publicly available.","2bd34751d1bdab81e95c988b0dc68ffd":"","dbfad9fdd491dc39ee82c2a34bd81382":"Onyx and Dasung devices: Best to my knowledge uses AOSP with a UI not publicly available.","dcda944faa493cc8372006799a563c31":"","0caaef8ca58f6dd7f70c13b283495bd5":"","7c767da64f4a2ad2d0a1d9276c4cb036":"","f39f0a1ffe6f48bf4aa78b31a60278d6":"","9f64c754be9e89bd7a420e40fccfd652":"","4f9e30bc76addb9a909d48d3844bce6a":"","361dc357ed2be9563202d60e8e05301d":""}}};
+
+
+			// Use local fonts
+			SLConfig.fonts_url = 'lib/fonts/';
+		</script>
+
+		<script src="lib/reveal.js"></script>
+		<script src="lib/reveal-plugins.js"></script>
+		<script src="lib/offline.js"></script>
+
+		<!-- Initialize the presentation -->
+		<script>
+			Reveal.initialize({
+				width: 960,
+				height: 700,
+				margin: 0.05,
+
+
+				hash: true,
+				controls: true,
+				progress: true,
+				mouseWheel: false,
+				showNotes: false,
+				slideNumber: false,
+				fragmentInURL: true,
+
+				autoSlide: 0,
+				autoSlideStoppable: true,
+
+				autoAnimateMatcher: SL.deck.AutoAnimate.matcher,
+
+				center: false,
+				shuffle: false,
+				loop: false,
+				rtl: false,
+				navigationMode: "default",
+
+				transition: "none",
+				backgroundTransition: "slide",
+
+				highlight: {
+					escapeHTML: false
+				},
+
+				plugins: [ RevealZoom, RevealNotes, RevealMarkdown, RevealHighlight ]
+			});
+		</script>
+
+
+
+	</body>
+</html>
