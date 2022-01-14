@@ -6,6 +6,8 @@ tags:
 
 # Projects
 
+- [[[announcing-modos]]]
+- [[[modos-paper-laptop]]]
 - [[building-an-e-ink-laptop]]#
 - [[community-built-eink-laptop]]#
 - [[[papertop]]]
